@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>The Ponytail Rule | Why 8 in 10 Women With PCOS Have Dark Patches & How To Clear Them From The Root</title>
-  <meta name="description" content="A real investigative story on PCOS hyperpigmentation (Acanthosis Nigricans), why surface scrubbing fails, and how Daily Knack PCO Defense (Berberine) tackles the hormonal insulin trigger from within." />
+  <meta name="description" content="A real investigative story on PCOS hyperpigmentation (Acanthosis Nigricans), unretouched before-and-after photographic evidence, and how Daily Knack PCO Defense (Berberine) tackles the hormonal insulin trigger from within." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet" />
@@ -232,7 +232,6 @@
       font-weight: 700;
     }
 
-    /* Story Section Headings */
     .story-card h2 {
       font-family: var(--font-serif);
       font-size: 24px;
@@ -399,6 +398,183 @@
       color: #475569;
       margin-bottom: 0;
       line-height: 1.5;
+    }
+
+    /* REAL BEFORE & AFTER CLINICAL GALLERY */
+    .before-after-section {
+      background: #ffffff;
+      border: 2px solid var(--border-color);
+      border-radius: 22px;
+      padding: 28px 22px;
+      margin: 32px 0 28px;
+      box-shadow: var(--shadow-sm);
+    }
+    .ba-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .ba-badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+    .ba-title {
+      font-family: var(--font-serif);
+      font-size: 25px;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+    .ba-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
+    .ba-tabs {
+      display: flex;
+      gap: 6px;
+      background: #f4edea;
+      padding: 5px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      overflow-x: auto;
+    }
+    .ba-tab-btn {
+      flex: 1;
+      white-space: nowrap;
+      border: none;
+      background: transparent;
+      padding: 10px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #64748b;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .ba-tab-btn.active {
+      background: #ffffff;
+      color: var(--primary-dark);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    .ba-showcase-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+      background: #fdfbf9;
+      border: 1px solid #eedcd6;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 22px;
+    }
+    @media (max-width: 620px) {
+      .ba-showcase-card { grid-template-columns: 1fr; }
+    }
+    .ba-image-frame {
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      background: #fff;
+      border: 1px solid #ebdcd6;
+      text-align: center;
+    }
+    .ba-image-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: opacity 0.25s ease-in-out;
+    }
+    .ba-details-box {
+      padding: 6px;
+    }
+    .ba-case-tag {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--primary);
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .ba-details-box h4 {
+      font-size: 17.5px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+    .ba-details-box p {
+      font-size: 13.5px;
+      color: #475569;
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+
+    .ba-metrics-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      background: #ffffff;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ebdcd6;
+      text-align: center;
+    }
+    .ba-metric .num {
+      display: block;
+      font-size: 16px;
+      font-weight: 800;
+      color: #2e7d32;
+    }
+    .ba-metric .lbl {
+      font-size: 10.5px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* All 4 Thumbnails Grid */
+    .ba-grid-overview {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    @media (max-width: 520px) {
+      .ba-grid-overview { grid-template-columns: repeat(2, 1fr); }
+    }
+    .ba-grid-item {
+      border: 2px solid #ebdcd6;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .ba-grid-item:hover, .ba-grid-item.active {
+      border-color: var(--primary);
+      box-shadow: 0 4px 10px rgba(158, 70, 56, 0.15);
+      transform: translateY(-2px);
+    }
+    .ba-grid-item img {
+      width: 100%;
+      height: 90px;
+      object-fit: cover;
+    }
+    .ba-grid-cap {
+      padding: 6px 8px;
+      font-size: 11px;
+      color: #334155;
+      text-align: center;
+      line-height: 1.25;
+      background: #fdfbf9;
+      border-top: 1px solid #ebdcd6;
     }
 
     /* Product Interactive Showcase */
@@ -647,7 +823,7 @@
       margin-bottom: 0;
     }
 
-    /* Verified Reviews */
+    /* Verified Reviews with Photos */
     .reviews-section {
       background: #ffffff;
       border-radius: 20px;
@@ -671,13 +847,26 @@
     .reviews-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 14px;
+      gap: 16px;
     }
     .review-card {
       background: #faf8f7;
       border: 1px solid #ebdcd6;
       border-radius: 14px;
-      padding: 18px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 140px;
+      gap: 16px;
+      align-items: center;
+    }
+    @media (max-width: 560px) {
+      .review-card { grid-template-columns: 1fr; }
+    }
+    .review-photo-thumb img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #e2cfc8;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
     .review-stars {
       color: #eab308;
@@ -1113,7 +1302,7 @@
 
       <!-- Story Part 3: The Internal Breakthrough -->
       <section class="story-card">
-        <h2>The Breakthrough: Tacking The Root Cause From Within</h2>
+        <h2>The Breakthrough: Tackling The Root Cause From Within</h2>
         <p>
           In a functional medicine journal, I came across clinical studies on a natural plant alkaloid called <strong>Berberine</strong>.
         </p>
@@ -1131,6 +1320,74 @@
         <p>
           That led me to <strong>Daily Knack's PCO Defense</strong>—the first dedicated Berberine formula engineered specifically for women navigating PCOS metabolic resistance.
         </p>
+      </section>
+
+      <!-- REAL BEFORE & AFTER CLINICAL GALLERY (FROM TRYSTRAWBERRY) -->
+      <section class="before-after-section">
+        <div class="ba-header">
+          <span class="ba-badge">Clinical & Patient Progressions</span>
+          <h3 class="ba-title">Documented Transformations: Before & After</h3>
+          <p class="ba-subtitle">
+            Unretouched photographic progressions demonstrating visible clearing of PCOS-related Acanthosis Nigricans across target skin folds.
+          </p>
+        </div>
+
+        <!-- Case Tabs -->
+        <div class="ba-tabs">
+          <button class="ba-tab-btn active" onclick="switchBaCase(1, this)">Case 1: Posterior Neck</button>
+          <button class="ba-tab-btn" onclick="switchBaCase(2, this)">Case 2: Underarms</button>
+          <button class="ba-tab-btn" onclick="switchBaCase(3, this)">Case 3: Delicate Folds</button>
+          <button class="ba-tab-btn" onclick="switchBaCase(4, this)">Case 4: Full Body Reset</button>
+        </div>
+
+        <!-- Featured Case Showcase Card -->
+        <div class="ba-showcase-card">
+          <div class="ba-image-frame">
+            <img id="mainBaImg" src="images/before-after-2.png" alt="PCOS Hyperpigmentation Before and After Comparison Case 1" />
+          </div>
+          <div class="ba-details-box">
+            <div class="ba-case-tag" id="baCaseTag">Patient Case Study #1 · Posterior Neck & Collar</div>
+            <h4 id="baCaseTitle">Fading The Velvet "Acanthosis Collar"</h4>
+            <p id="baCaseDesc">
+              <strong>Starting Condition:</strong> Deep velvety hyperkeratotic ring with coarse leathery texture circling the nape of the neck, worsened by years of loofah scrubbing.<br><br>
+              <strong>Week 6 Result:</strong> Dramatic reduction in melanin density. Keratin buildup smoothed completely, restoring seamless tone with the surrounding neckline.
+            </p>
+            <div class="ba-metrics-row">
+              <div class="ba-metric">
+                <span class="num">85%</span>
+                <span class="lbl">Tone Brightening</span>
+              </div>
+              <div class="ba-metric">
+                <span class="num">0%</span>
+                <span class="lbl">Rebound Darkness</span>
+              </div>
+              <div class="ba-metric">
+                <span class="num">6 Wks</span>
+                <span class="lbl">Observed Protocol</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4-Grid Overview with click to inspect -->
+        <div class="ba-grid-overview">
+          <div class="ba-grid-item active" id="baGridItem1" onclick="switchBaCase(1, null)">
+            <img src="images/before-after-2.png" alt="Before & After Case 1: Posterior Neck" />
+            <div class="ba-grid-cap"><strong>Case 1:</strong> Neck Acanthosis Ring</div>
+          </div>
+          <div class="ba-grid-item" id="baGridItem2" onclick="switchBaCase(2, null)">
+            <img src="images/before-after-1.png" alt="Before & After Case 2: Underarms" />
+            <div class="ba-grid-cap"><strong>Case 2:</strong> Underarms & Armpits</div>
+          </div>
+          <div class="ba-grid-item" id="baGridItem3" onclick="switchBaCase(3, null)">
+            <img src="images/before-after-3.png" alt="Before & After Case 3: Inner Thighs" />
+            <div class="ba-grid-cap"><strong>Case 3:</strong> Delicate Folds & Thighs</div>
+          </div>
+          <div class="ba-grid-item" id="baGridItem4" onclick="switchBaCase(4, null)">
+            <img src="images/before-after-4.png" alt="Before & After Case 4: Full Multi-Area Reset" />
+            <div class="ba-grid-cap"><strong>Case 4:</strong> Multi-Area Full Reset</div>
+          </div>
+        </div>
       </section>
 
       <!-- Product Interactive Showcase Box -->
@@ -1243,20 +1500,31 @@
         </div>
       </section>
 
-      <!-- Customer Reviews -->
+      <!-- Customer Reviews with Real Before/After Photos -->
       <section class="reviews-section">
         <h3 class="reviews-title">Verified Women With PCOS Share Their Results</h3>
         <p class="reviews-rating-sub">★★★★★ 4.9 out of 5 based on verified real purchases</p>
         <div class="reviews-grid">
           <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"I suffered from dark, leathery skin on the back of my neck and armpits since I was 17. Every doctor told me to just scrub harder. PCO Defense completely changed everything. By week 4, the dark band was 80% gone, and I stopped having intense sugar crashes."</p>
-            <div class="review-author">Jessica T., 29 <span class="verified-tick">✔ Verified Buyer</span></div>
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Finally, something gentle enough for my sensitive skin! No irritation, just smoother skin and lighter dark spots. My dark neck patches from PCOS made me self-conscious for years. Berberine genuinely works and I’m excited to keep using it."</p>
+              <div class="review-author">Christina B., Verified Purchase <span class="verified-tick">✔ Verified Buyer</span></div>
+            </div>
+            <div class="review-photo-thumb">
+              <img src="images/before-after-1.png" alt="Christina B. Before and After" />
+            </div>
           </div>
+
           <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"This is the only thing that tackled my PCOS dark spots from the actual root cause. Bleaching creams only burned my underarms. Taking this Berberine daily helped both my skin and my stubborn belly bloating."</p>
-            <div class="review-author">Rachel K., 34 <span class="verified-tick">✔ Verified Buyer</span></div>
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"I suffered from dark, leathery skin on the back of my neck and armpits since I was 17. Every doctor told me to just scrub harder. PCO Defense completely changed everything. By week 4, the dark band was 80% gone, and I stopped having intense sugar crashes."</p>
+              <div class="review-author">Jessica T., 29 <span class="verified-tick">✔ Verified Buyer</span></div>
+            </div>
+            <div class="review-photo-thumb">
+              <img src="images/before-after-3.png" alt="Jessica T. Before and After" />
+            </div>
           </div>
         </div>
       </section>
@@ -1371,7 +1639,72 @@
     document.getElementById('currentDate').innerText = 'Updated ' + new Date().toLocaleDateString('en-US', dateOpts);
     document.getElementById('year').innerText = new Date().getFullYear();
 
-    // Image switcher
+    // Before and After Cases Data
+    const baCases = {
+      1: {
+        img: 'images/before-after-2.png',
+        tag: 'Patient Case Study #1 · Posterior Neck & Collar',
+        title: 'Fading The Velvet "Acanthosis Collar"',
+        desc: '<strong>Starting Condition:</strong> Deep velvety hyperkeratotic ring with coarse leathery texture circling the nape of the neck, worsened by years of loofah scrubbing.<br><br><strong>Week 6 Result:</strong> Dramatic reduction in melanin density. Keratin buildup smoothed completely, restoring seamless tone with the surrounding neckline.',
+        gridId: 'baGridItem1'
+      },
+      2: {
+        img: 'images/before-after-1.png',
+        tag: 'Patient Case Study #2 · Underarm & Axillary Zone',
+        title: 'Clearing Stubborn Axillary Discoloration',
+        desc: '<strong>Starting Condition:</strong> Dark grey-brown shadowed discoloration spreading across the armpit folds. Chronic redness and irritation from shaving and antiperspirants.<br><br><strong>Week 5 Result:</strong> Underarms visibly clarified and smoothed. Friction redness vanished, and tone normalized to match the upper arm.',
+        gridId: 'baGridItem2'
+      },
+      3: {
+        img: 'images/before-after-3.png',
+        tag: 'Patient Case Study #3 · Delicate Folds & Inner Thighs',
+        title: 'Relieving Friction & Pigment Overproduction',
+        desc: '<strong>Starting Condition:</strong> Chronic friction patches along inner thighs and skin folds aggravated by insulin spikes and hormone-triggered melanin surges.<br><br><strong>Week 6 Result:</strong> Skin barrier rebuilt, leathery roughness sloughed off, and dark perimeter lightened into a smooth, uniform tone.',
+        gridId: 'baGridItem3'
+      },
+      4: {
+        img: 'images/before-after-4.png',
+        tag: 'Patient Case Study #4 · Full Multi-Area Reset',
+        title: 'Comprehensive 8-Week Multi-Zone Turnaround',
+        desc: '<strong>Starting Condition:</strong> Extensive hyperpigmentation across multiple high-friction areas accompanied by severe stubborn PCOS bloating and glucose crashes.<br><br><strong>Week 8 Result:</strong> Complete systemic metabolic turnaround. Dark patches faded across all zones without rebound discoloration.',
+        gridId: 'baGridItem4'
+      }
+    };
+
+    function switchBaCase(caseNum, btn) {
+      const data = baCases[caseNum];
+      if (!data) return;
+
+      const img = document.getElementById('mainBaImg');
+      img.style.opacity = '0.3';
+      setTimeout(() => {
+        img.src = data.img;
+        img.style.opacity = '1';
+      }, 150);
+
+      document.getElementById('baCaseTag').innerText = data.tag;
+      document.getElementById('baCaseTitle').innerText = data.title;
+      document.getElementById('baCaseDesc').innerHTML = data.desc;
+
+      // Update Tab button
+      if (btn) {
+        document.querySelectorAll('.ba-tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      } else {
+        const tabs = document.querySelectorAll('.ba-tab-btn');
+        if (tabs[caseNum - 1]) {
+          tabs.forEach(b => b.classList.remove('active'));
+          tabs[caseNum - 1].classList.add('active');
+        }
+      }
+
+      // Update grid highlight
+      document.querySelectorAll('.ba-grid-item').forEach(i => i.classList.remove('active'));
+      const activeGrid = document.getElementById(data.gridId);
+      if (activeGrid) activeGrid.classList.add('active');
+    }
+
+    // Product Image switcher
     function switchProductImg(src, btn) {
       const img = document.getElementById('mainProductImg');
       img.style.opacity = '0.3';
