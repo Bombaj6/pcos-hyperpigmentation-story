@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>The Ponytail Rule | Why 8 in 10 Women With PCOS Suffer From Dark Patches & How To Fade Them</title>
-  <meta name="description" content="A real investigative story on PCOS-related hyperpigmentation (Acanthosis Nigricans), why scrubbing makes it darker, and the gentle 5-active formula restoring clear skin." />
+  <title>The Ponytail Rule | Why 8 in 10 Women With PCOS Have Dark Patches & How To Clear Them From The Root</title>
+  <meta name="description" content="A real investigative story on PCOS hyperpigmentation (Acanthosis Nigricans), why surface scrubbing fails, and how Daily Knack PCO Defense (Berberine) tackles the hormonal insulin trigger from within." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet" />
   
   <style>
     :root {
-      --primary: #c75551;
-      --primary-dark: #a83f3c;
-      --primary-light: #fbeeed;
+      --primary: #9e4638;
+      --primary-dark: #7f3226;
+      --primary-light: #fdf2f0;
       --accent: #2e7d32;
-      --navy: #1e293b;
+      --accent-light: #e8f5e9;
+      --navy: #0f172a;
       --text-main: #334155;
       --text-muted: #64748b;
       --bg-cream: #faf7f5;
@@ -23,9 +24,9 @@
       --border-color: #ebdcd6;
       --font-serif: 'Playfair Display', Georgia, serif;
       --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-      --shadow-sm: 0 2px 8px rgba(199, 85, 81, 0.08);
+      --shadow-sm: 0 2px 8px rgba(158, 70, 56, 0.08);
       --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
-      --shadow-lg: 0 16px 36px rgba(199, 85, 81, 0.12);
+      --shadow-lg: 0 16px 36px rgba(158, 70, 56, 0.12);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -34,7 +35,7 @@
       font-family: var(--font-sans);
       background-color: var(--bg-cream);
       color: var(--text-main);
-      line-height: 1.68;
+      line-height: 1.7;
       font-size: 16.5px;
       -webkit-font-smoothing: antialiased;
     }
@@ -49,7 +50,7 @@
       font-size: 13px;
       font-weight: 600;
       letter-spacing: 0.5px;
-      padding: 9px 12px;
+      padding: 10px 14px;
       text-align: center;
     }
     .top-ticker span.highlight {
@@ -91,7 +92,7 @@
       font-family: var(--font-sans);
       font-size: 10px;
       font-weight: 800;
-      padding: 3px 7px;
+      padding: 3px 8px;
       border-radius: 999px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
@@ -112,7 +113,7 @@
 
     /* Article Hero */
     .article-hero {
-      padding: 34px 0 20px;
+      padding: 32px 0 20px;
     }
     .category-badge {
       display: inline-flex;
@@ -154,13 +155,13 @@
       padding: 14px 0;
       border-top: 1px solid var(--border-color);
       border-bottom: 1px solid var(--border-color);
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }
     .author-avatar {
       width: 48px;
       height: 48px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #c75551, #e99592);
+      background: linear-gradient(135deg, #9e4638, #d88073);
       color: #fff;
       display: flex;
       align-items: center;
@@ -168,7 +169,7 @@
       font-weight: 700;
       font-size: 16px;
       flex-shrink: 0;
-      box-shadow: 0 2px 8px rgba(199, 85, 81, 0.25);
+      box-shadow: 0 2px 8px rgba(158, 70, 56, 0.25);
     }
     .author-details h4 {
       font-size: 14px;
@@ -178,6 +179,29 @@
     .author-details p {
       font-size: 12.5px;
       color: var(--text-muted);
+    }
+
+    /* Featured Story Hero Image */
+    .story-hero-media {
+      margin-bottom: 26px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-color);
+      background: #fff;
+    }
+    .story-hero-media img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+    }
+    .media-caption {
+      padding: 10px 16px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      background: #fdfbf9;
+      border-top: 1px solid #f1e5e0;
+      font-style: italic;
     }
 
     /* Content Card */
@@ -241,6 +265,66 @@
       margin-top: 8px;
       font-size: 13.5px;
       color: var(--primary);
+    }
+
+    /* Clinical Visual Comparison (Photo of Acanthosis) */
+    .clinical-case-box {
+      margin: 26px 0;
+      background: #fdfbf9;
+      border: 1px solid #f0e0db;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .clinical-case-header {
+      background: #3b2a29;
+      color: #fff;
+      padding: 10px 16px;
+      font-size: 12.5px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .clinical-case-grid {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 18px;
+      padding: 18px;
+      align-items: center;
+    }
+    @media (max-width: 600px) {
+      .clinical-case-grid { grid-template-columns: 1fr; }
+    }
+    .clinical-case-grid img {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+    }
+    .clinical-case-info h4 {
+      font-size: 16px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+    .clinical-case-info p {
+      font-size: 14px;
+      color: #475569;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .clinical-tag {
+      display: inline-block;
+      background: #fee2e2;
+      color: #991b1b;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 6px;
+      text-transform: uppercase;
     }
 
     /* Warning Callout */
@@ -317,147 +401,197 @@
       line-height: 1.5;
     }
 
-    /* Active Ingredients Showcase */
-    .actives-box {
-      background: linear-gradient(180deg, #fffafd 0%, #fff 100%);
-      border: 2px solid #f3d7d5;
-      border-radius: 18px;
-      padding: 26px;
-      margin: 28px 0;
+    /* Product Interactive Showcase */
+    .product-showcase-box {
+      background: linear-gradient(180deg, #ffffff 0%, #fdf8f6 100%);
+      border: 2px solid #ecd5ce;
+      border-radius: 22px;
+      padding: 28px 24px;
+      margin: 32px 0 24px;
+      box-shadow: var(--shadow-md);
     }
-    .actives-title {
-      font-size: 18px;
+    .product-badge-flag {
+      background: #2e7d32;
+      color: #ffffff;
+      font-size: 11px;
       font-weight: 800;
-      color: #882b28;
-      text-align: center;
-      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      display: inline-block;
+      margin-bottom: 12px;
     }
-    .actives-subtitle {
-      text-align: center;
-      font-size: 13.5px;
-      color: var(--text-muted);
+    .product-headline {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      color: #0f172a;
+      margin-bottom: 8px;
+      line-height: 1.25;
+    }
+    .product-tagline {
+      font-size: 14.5px;
+      color: #64748b;
       margin-bottom: 22px;
     }
-    .actives-list {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
+
+    /* Gallery with Main Preview & Thumbnails */
+    .gallery-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: center;
+      margin-bottom: 24px;
     }
-    .active-card {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
+    @media (max-width: 620px) {
+      .gallery-wrapper { grid-template-columns: 1fr; }
+    }
+    .gallery-main-view {
       background: #ffffff;
-      border: 1px solid #fae1df;
-      padding: 14px 16px;
-      border-radius: 12px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.02);
-    }
-    .active-percentage {
-      background: var(--primary);
-      color: #ffffff;
-      font-weight: 800;
-      font-size: 13px;
-      padding: 4px 10px;
-      border-radius: 8px;
-      flex-shrink: 0;
+      border: 1px solid #ebdcd6;
+      border-radius: 16px;
+      padding: 16px;
       text-align: center;
-      min-width: 58px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
     }
-    .active-info h5 {
-      font-size: 14.5px;
-      font-weight: 700;
-      color: #1e293b;
+    .gallery-main-view img {
+      max-height: 280px;
+      margin: 0 auto;
+      object-fit: contain;
+      transition: opacity 0.2s ease-in-out;
+    }
+    .gallery-thumbs {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .thumb-btn {
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 4px;
+      background: #fff;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .thumb-btn.active {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(158, 70, 56, 0.2);
+    }
+    .thumb-btn img {
+      width: 100%;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .product-details-side h4 {
+      font-size: 16.5px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+    .product-bullets {
+      list-style: none;
+      margin: 12px 0 18px;
+    }
+    .product-bullets li {
+      position: relative;
+      padding-left: 26px;
+      font-size: 14px;
+      color: #334155;
+      margin-bottom: 8px;
+      line-height: 1.45;
+    }
+    .product-bullets li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #2e7d32;
+      font-weight: 800;
+    }
+
+    /* Supplement Facts Highlight */
+    .supp-facts-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 16px;
+      margin: 20px 0;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    @media (max-width: 540px) {
+      .supp-facts-card { flex-direction: column; text-align: center; }
+    }
+    .supp-facts-card img {
+      width: 120px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      cursor: pointer;
+      background: #fff;
+      padding: 4px;
+    }
+    .supp-facts-info h5 {
+      font-size: 15px;
+      color: #0f172a;
+      font-weight: 800;
       margin-bottom: 4px;
     }
-    .active-info p {
-      font-size: 13.5px;
-      color: #475569;
+    .supp-facts-info p {
+      font-size: 13px;
+      color: #64748b;
       margin-bottom: 0;
       line-height: 1.45;
     }
 
-    /* Before / After Interactive Visual Card */
-    .comparison-container {
+    /* Trust Icons Row */
+    .trust-icons-strip {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 18px 0;
+      padding: 12px;
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid #f1e5e0;
+    }
+    .trust-badge-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #475569;
+    }
+
+    /* Transformation Story Card with After Photo */
+    .transformation-card {
       background: #ffffff;
+      border-radius: 20px;
+      padding: 30px 26px;
+      margin-bottom: 26px;
       border: 1px solid var(--border-color);
-      border-radius: 18px;
-      overflow: hidden;
-      margin: 26px 0;
       box-shadow: var(--shadow-sm);
     }
-    .comparison-header {
-      background: #2b1d1d;
-      color: #ffffff;
-      padding: 12px 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 13px;
-      font-weight: 700;
-    }
-    .comparison-tabs {
-      display: flex;
-      background: #f1edea;
-      padding: 4px;
-      gap: 4px;
-    }
-    .comparison-tab-btn {
-      flex: 1;
-      border: none;
-      background: transparent;
-      padding: 10px;
-      font-size: 13px;
-      font-weight: 700;
-      color: #64748b;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    .comparison-tab-btn.active {
-      background: #ffffff;
-      color: var(--primary-dark);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-    }
-    .comparison-display {
-      padding: 22px;
-      text-align: center;
-    }
-    .comparison-cards-grid {
+    .transformation-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
+      grid-template-columns: 1fr 220px;
+      gap: 20px;
+      align-items: center;
+      margin-top: 14px;
     }
-    .comp-card {
+    @media (max-width: 580px) {
+      .transformation-grid { grid-template-columns: 1fr; }
+    }
+    .transformation-grid img {
       border-radius: 14px;
-      overflow: hidden;
-      border: 1px solid #e2e8f0;
-      background: #f8fafc;
-      padding: 16px;
-      text-align: left;
-    }
-    .comp-card.before {
-      border-top: 4px solid #ef4444;
-    }
-    .comp-card.after {
-      border-top: 4px solid #10b981;
-    }
-    .comp-badge {
-      font-size: 11px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      padding: 3px 8px;
-      border-radius: 4px;
-      display: inline-block;
-      margin-bottom: 8px;
-    }
-    .comp-card.before .comp-badge { background: #fee2e2; color: #b91c1c; }
-    .comp-card.after .comp-badge { background: #d1fae5; color: #047857; }
-    .comp-desc {
-      font-size: 13.5px;
-      color: #334155;
-      line-height: 1.5;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      max-height: 260px;
+      object-fit: cover;
+      width: 100%;
     }
 
     /* Timeline Tracker */
@@ -513,7 +647,7 @@
       margin-bottom: 0;
     }
 
-    /* Reviews Showcase */
+    /* Verified Reviews */
     .reviews-section {
       background: #ffffff;
       border-radius: 20px;
@@ -570,7 +704,7 @@
       font-weight: 800;
     }
 
-    /* Product Offer Box */
+    /* Order Section */
     .offer-box {
       background: #ffffff;
       border: 2px solid var(--primary);
@@ -593,7 +727,7 @@
       letter-spacing: 0.8px;
       padding: 5px 16px;
       border-radius: 999px;
-      box-shadow: 0 4px 10px rgba(199, 85, 81, 0.3);
+      box-shadow: 0 4px 10px rgba(158, 70, 56, 0.3);
     }
     .offer-headline {
       text-align: center;
@@ -622,7 +756,7 @@
     .pkg-card {
       border: 2px solid #e2e8f0;
       border-radius: 14px;
-      padding: 16px;
+      padding: 18px 16px;
       cursor: pointer;
       transition: all 0.2s;
       background: #fafaf9;
@@ -630,8 +764,8 @@
     }
     .pkg-card.selected {
       border-color: var(--primary);
-      background: #fffafa;
-      box-shadow: 0 4px 14px rgba(199, 85, 81, 0.12);
+      background: #fff8f7;
+      box-shadow: 0 4px 14px rgba(158, 70, 56, 0.12);
     }
     .pkg-badge {
       position: absolute;
@@ -646,7 +780,7 @@
       text-transform: uppercase;
     }
     .pkg-name {
-      font-size: 15px;
+      font-size: 15.5px;
       font-weight: 800;
       color: #0f172a;
       margin-bottom: 4px;
@@ -658,7 +792,7 @@
       margin-bottom: 6px;
     }
     .pkg-price {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 800;
       color: var(--primary);
     }
@@ -668,7 +802,7 @@
       text-decoration: line-through;
     }
     .pkg-desc {
-      font-size: 12px;
+      font-size: 12.5px;
       color: #64748b;
     }
 
@@ -676,9 +810,9 @@
     .primary-cta-btn {
       display: block;
       width: 100%;
-      background: linear-gradient(180deg, #c75551 0%, #ad3c38 100%);
+      background: linear-gradient(180deg, #9e4638 0%, #822e23 100%);
       color: #ffffff;
-      font-size: 18.5px;
+      font-size: 19px;
       font-weight: 800;
       text-align: center;
       padding: 18px 24px;
@@ -687,12 +821,12 @@
       cursor: pointer;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      box-shadow: 0 8px 22px rgba(199, 85, 81, 0.35);
+      box-shadow: 0 8px 22px rgba(158, 70, 56, 0.35);
       transition: transform 0.15s, box-shadow 0.15s;
     }
     .primary-cta-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 12px 28px rgba(199, 85, 81, 0.45);
+      box-shadow: 0 12px 28px rgba(158, 70, 56, 0.45);
     }
     .cta-sub-guarantee {
       text-align: center;
@@ -703,24 +837,6 @@
       align-items: center;
       justify-content: center;
       gap: 6px;
-    }
-
-    /* Trust Chips */
-    .trust-chips-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      margin-top: 20px;
-    }
-    .trust-chip {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 10px 6px;
-      text-align: center;
-      font-size: 11px;
-      font-weight: 700;
-      color: #334155;
     }
 
     /* FAQ Accordion */
@@ -776,7 +892,7 @@
       display: block;
     }
 
-    /* Sticky Mobile CTA Bar */
+    /* Mobile Sticky Bar */
     .mobile-sticky-bar {
       display: none;
       position: fixed;
@@ -842,16 +958,16 @@
 
   <!-- Top Urgent Bar -->
   <div class="top-ticker">
-    ⚡ CLINICAL SPECIAL REPORT: 8 IN 10 WOMEN WITH PCOS EXPERIENCE SILENT HYPERPIGMENTATION 
-    <span class="highlight">CODE: BRIGHT20 ACTIVE</span>
+    ⚡ SPECIAL PCOS INVESTIGATION: 80% OF WOMEN WITH PCOS STRUGGLE WITH UNTREATED ACANTHOSIS NIGRICANS
+    <span class="highlight">ROOT CAUSE PROTOCOL</span>
   </div>
 
   <!-- Masthead -->
   <header class="masthead">
     <div class="masthead-inner">
       <div class="publication-logo">
-        HER HEALTH JOURNAL
-        <span>Case Study</span>
+        HER HEALTH INVESTIGATION
+        <span>Endocrine & Dermatology</span>
       </div>
       <div class="masthead-date" id="currentDate">Updated Today</div>
     </div>
@@ -862,21 +978,29 @@
     <!-- Article Hero -->
     <article class="article-hero">
       <div class="category-badge">
-        <span>🔬</span> PCOS Dermatology Investigation
+        <span>🔬</span> PCOS Hormonal Skin Investigation
       </div>
       <h1 class="article-title">
-        "I Kept My Hair Down For 6 Years To Hide The Dark Collar On My Neck. My Doctor Said It Was Dirt—Until I Uncovered The Hidden Hormonal Cycle."
+        "I Kept My Hair Down For 6 Years To Hide The Dark Collar On My Neck. My Doctor Said It Was Just 'Dirt'—Until I Uncovered The Hidden Insulin Cycle."
       </h1>
       <p class="article-subtitle">
-        How an overlooked symptom of Polycystic Ovary Syndrome creates stubborn dark patches on the neck, underarms, and inner thighs—why violent scrubbing makes it darker—and the gentle 5-active formula clearing it up in weeks.
+        How an overlooked metabolic trigger in Polycystic Ovary Syndrome causes dark velvety patches on the neck, underarms, and inner thighs—why violent scrubbing makes it darker—and the natural metabolic breakthrough clearing it from within.
       </p>
 
       <!-- Author Byline -->
       <div class="author-meta">
         <div class="author-avatar">ML</div>
         <div class="author-details">
-          <h4>By Maya Lin, Reviewed by Christina B.</h4>
-          <p>Medical Contributor & PCOS Patient Advocate · 7 Min Read</p>
+          <h4>By Maya Lin, Reviewed by Clinical Endocrinology Contributor</h4>
+          <p>Women's Health Advocate · 8 Min Read</p>
+        </div>
+      </div>
+
+      <!-- Hero Story Image -->
+      <div class="story-hero-media">
+        <img src="images/hero-maya.jpg" alt="Woman looking into mirror dealing with PCOS skin concerns" />
+        <div class="media-caption">
+          For years, millions of women with PCOS suffer in silence, believing the velvety discoloration around their neck and skin folds is poor hygiene or incurable discoloration.
         </div>
       </div>
 
@@ -886,7 +1010,7 @@
           For six years, I lived by one strict, unspoken rule: <strong>my hair never went up in public.</strong>
         </p>
         <p>
-          It didn’t matter if it was 95 degrees outside and the humidity was unbearable. It didn’t matter if sweat was rolling down my shoulder blades. The curtain of hair stayed down, glued to the nape of my neck.
+          It didn’t matter if it was 95 degrees outside and sweat was drenching my spine. The curtain of heavy hair stayed down, glued to the nape of my neck.
         </p>
         <p>
           Because right underneath that hair was a dark, velvety ring circling my collar.
@@ -896,7 +1020,7 @@
         </p>
 
         <div class="emotional-quote">
-          "A girl in my college dorm handed me an exfoliating glove with a gentle smile: 'Hey, I think your neck has bronzer residue on it. Try scrubbing harder with this.' I went into the bathroom, locked the door, and cried until my chest hurt."
+          "A girl in my college dorm handed me an exfoliating glove with a gentle smile: 'Hey, I think your neck has bronzer residue on it. Try scrubbing harder with this.' I went into the bathroom, locked the door, and cried until my chest burned."
           <strong>— Maya Lin</strong>
         </div>
 
@@ -904,10 +1028,10 @@
           I *had* scrubbed. God knows I tried.
         </p>
         <p>
-          I had spent years scrubbing my skin raw with abrasive loofahs, harsh turmeric pastes, lemon juice, bleaching soaps, and 10% benzoyl peroxide. Every shower ended with burning, bright red skin.
+          I spent years attacking my skin with coarse loofahs, harsh turmeric pastes, lemon juice, bleaching soaps, and benzoyl peroxide. Every shower ended with burning, raw red skin.
         </p>
         <p>
-          Yet every morning, the dark patch was still there. In fact, within weeks, it felt thicker, rougher, and darker than before.
+          Yet every morning, the dark patch was still there. In fact, within weeks, it felt thicker, rougher, and darker than ever before.
         </p>
       </section>
 
@@ -915,17 +1039,34 @@
       <section class="story-card">
         <h2>The Diagnosis: When It Finally Had A Name</h2>
         <p>
-          At 24, after months of irregular periods and persistent fatigue, my endocrinologist gave it a name: <strong>Polycystic Ovary Syndrome (PCOS).</strong>
+          At 24, after months of missed periods, stubborn belly weight, and overwhelming afternoon fatigue, an endocrinologist finally gave it a name: <strong>Polycystic Ovary Syndrome (PCOS).</strong>
         </p>
         <p>
-          When I hesitantly lifted my hair and showed him the dark velvety collar around my neck, he barely glanced up from his computer screen:
+          When I hesitantly lifted my hair and showed him the dark velvety collar around my neck, he barely looked up from his chart:
         </p>
         <p style="font-style: italic; color: #475569; padding-left: 14px; border-left: 2px solid #cbd5e1;">
           "That's Acanthosis Nigricans. It's caused by insulin resistance. Over 80% of PCOS patients get it. Just lose weight and it might fade."
         </p>
         <p>
-          That was it. No guidance. No treatment. Just a dismissive shrug for a condition that made me turn off the bedroom lights every single time my partner reached for me.
+          That was it. No treatment plan. No explanation. Just a shrug for a condition that made me turn off the bedroom lights every single time my partner came near me.
         </p>
+
+        <!-- Clinical Photo Case -->
+        <div class="clinical-case-box">
+          <div class="clinical-case-header">
+            <span>Clinical Pathology</span>
+            <span>Acanthosis Nigricans</span>
+          </div>
+          <div class="clinical-case-grid">
+            <img src="images/acanthosis-clinical.jpg" alt="Clinical photograph of Acanthosis Nigricans on posterior neck" />
+            <div class="clinical-case-info">
+              <span class="clinical-tag">Hormonal Dermatosis</span>
+              <h4>Posterior Neck Hyperpigmentation</h4>
+              <p>Characterized by velvety, hyperkeratotic, hyperpigmented plaques along skin folds. Commonly misdiagnosed as dirt or friction discoloration.</p>
+              <p style="font-size: 12.5px; color: #94a3b8;">Primary Root Driver: Hyperinsulinemia & Cellular Insulin Resistance.</p>
+            </div>
+          </div>
+        </div>
 
         <!-- Warning Callout -->
         <div class="warning-box">
@@ -937,237 +1078,224 @@
           </p>
         </div>
 
-        <h3>Why Standard Brighteners & Bleach Fail</h3>
+        <h3>Why Bleaching Creams Never Worked</h3>
         <p>
-          For months, I bought every drugstore "dark spot remover" on the market. Nothing worked. Here is what dermatologists understand that big skincare brands don't tell you:
+          For months, I bought every drugstore "dark spot remover" and acid wash on the market. Nothing worked because <strong>surface treatments only address dead skin cells, completely ignoring the internal metabolic hormones pumping pigment from beneath!</strong>
         </p>
 
         <!-- Science Grid -->
         <div class="science-breakdown">
-          <h4><span>🧬</span> The 4 Hidden Drivers of PCOS Dark Patches</h4>
+          <h4><span>🧬</span> The Internal Insulin-Pigment Axis</h4>
           <div class="science-grid">
             <div class="science-item">
               <span class="pill">Hormone Driver</span>
               <h5>1. Insulin Resistance</h5>
-              <p>Elevated circulating insulin binds directly to insulin-like growth factor receptors on melanocytes, stimulating hyper-production of melanin.</p>
+              <p>Cells fail to absorb glucose, causing the pancreas to flood blood with excess insulin. High insulin binds to IGF-1 receptors on skin cells.</p>
             </div>
             <div class="science-item">
-              <span class="pill">Cellular Buildup</span>
-              <h5>2. High Androgens</h5>
-              <p>Elevated androgens accelerate cellular turnover, causing keratinocytes to stack up into a thick, velvety textured plaque.</p>
+              <span class="pill">Melanin Overload</span>
+              <h5>2. Melanocyte Activation</h5>
+              <p>Insulin-like signaling directly commands melanocytes to pump out abnormal surges of melanin in delicate friction folds.</p>
             </div>
             <div class="science-item">
-              <span class="pill">Friction Sensitivity</span>
-              <h5>3. Fold Friction</h5>
-              <p>In high-friction areas (neck folds, armpits, thighs), constant rubbing causes micro-inflammation, trapping pigment beneath the barrier.</p>
+              <span class="pill">Keratin Stacking</span>
+              <h5>3. Velvety Thickening</h5>
+              <p>Excess androgens and insulin stimulate rapid keratinocyte division, stacking dead cells into leathery, velvet-like plaques.</p>
             </div>
             <div class="science-item">
-              <span class="pill">Rebound Risk</span>
-              <h5>4. Harsh Bleaching Danger</h5>
-              <p>Hydroquinone and harsh peeling acids burn sensitive skin folds, triggering severe paradoxical darkening and sensitivity.</p>
+              <span class="pill">The Systemic Lock</span>
+              <h5>4. Resistance Loop</h5>
+              <p>Unless the underlying insulin resistance is addressed metabolically, the body continuously regenerates new dark pigment.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Story Part 3: The Discovery -->
+      <!-- Story Part 3: The Internal Breakthrough -->
       <section class="story-card">
-        <h2>The Discovery: The 5-Ingredient Clinical Complex</h2>
+        <h2>The Breakthrough: Tacking The Root Cause From Within</h2>
         <p>
-          Three months ago, inside an online PCOS community, a member posted an unretouched photo of her inner thighs and neck. The velvety leathery texture was gone, and her skin tone had seamlessly balanced out.
+          In a functional medicine journal, I came across clinical studies on a natural plant alkaloid called <strong>Berberine</strong>.
         </p>
         <p>
-          She didn't use harsh peels or prescription bleach. She was using a targeted resurfacing formula called <strong>Strawberry</strong>.
+          Researchers often refer to Berberine as <em>"the metabolic master switch."</em> It activates <strong>AMPK (Adenosine Monophosphate-Activated Protein Kinase)</strong>—the cellular enzyme responsible for turning sugar into energy and restoring insulin sensitivity.
         </p>
         <p>
-          Unlike generic face serums that pretend body skin doesn't exist, Strawberry was developed specifically for hormonal hyperpigmentation and sensitive skin folds.
+          When women with PCOS take clinical-grade Berberine:
         </p>
-
-        <!-- Actives Showcase -->
-        <div class="actives-box">
-          <div class="actives-title">The 5 Targeted Active Ingredients in Strawberry</div>
-          <div class="actives-subtitle">Synergistically formulated at exact clinical thresholds</div>
-          <div class="actives-list">
-            <div class="active-card">
-              <div class="active-percentage">6%</div>
-              <div class="active-info">
-                <h5>Glycolic Acid (AHA)</h5>
-                <p>Gently dissolves the thickened keratinized layer and velvety buildup without abrasive scrubbing.</p>
-              </div>
-            </div>
-            <div class="active-card">
-              <div class="active-percentage">2%</div>
-              <div class="active-info">
-                <h5>Tranexamic Acid</h5>
-                <p>Interrupts hormonal and inflammatory pigment signaling at the vascular level.</p>
-              </div>
-            </div>
-            <div class="active-card">
-              <div class="active-percentage">2%</div>
-              <div class="active-info">
-                <h5>Kojic Acid Dipalmitate</h5>
-                <p>A stabilized, non-irritating melanin inhibitor that targets deep enzymatic discoloration.</p>
-              </div>
-            </div>
-            <div class="active-card">
-              <div class="active-percentage">2%</div>
-              <div class="active-info">
-                <h5>Alpha-Arbutin</h5>
-                <p>Blocks tyrosinase activity to visibly fade dark areas and prevent new patches from developing.</p>
-              </div>
-            </div>
-            <div class="active-card">
-              <div class="active-percentage">5%</div>
-              <div class="active-info">
-                <h5>Niacinamide (Vitamin B3)</h5>
-                <p>Restores the lipid barrier, calms friction redness, and halts melanosome transfer.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <p style="font-size: 14px; color: #64748b; text-align: center;">
-          ✓ 100% Free from Hydroquinone, Steroids, Parabens, Sulfates & Synthetic Fragrances.
+        <ul style="margin: 12px 0 18px 20px; color: #334155; font-size: 15.5px;">
+          <li style="margin-bottom: 8px;"><strong>Cellular insulin sensitivity normalizes:</strong> The pancreas stops overproducing the insulin floods that trigger melanocytes.</li>
+          <li style="margin-bottom: 8px;"><strong>The fuel feeding Acanthosis Nigricans dries up:</strong> Without constant hormonal stimulation, the velvety leathery skin begins naturally sloughing away and lightening.</li>
+          <li style="margin-bottom: 8px;"><strong>Metabolic benefits cascade:</strong> Sugar cravings diminish, stubborn PCOS visceral weight drops, and hormone balance restores.</li>
+        </ul>
+        <p>
+          That led me to <strong>Daily Knack's PCO Defense</strong>—the first dedicated Berberine formula engineered specifically for women navigating PCOS metabolic resistance.
         </p>
       </section>
 
-      <!-- Before & After Interactive Comparison -->
-      <section class="comparison-container">
-        <div class="comparison-header">
-          <span>REAL PATIENT PROGRESSION</span>
-          <span>6-WEEK CLINICAL OBSERVATION</span>
-        </div>
-        <div class="comparison-tabs">
-          <button class="comparison-tab-btn active" onclick="switchArea('neck', this)">Neck & Collar</button>
-          <button class="comparison-tab-btn" onclick="switchArea('underarms', this)">Underarms</button>
-          <button class="comparison-tab-btn" onclick="switchArea('thighs', this)">Inner Thighs</button>
-        </div>
-        <div class="comparison-display" id="compDisplay">
-          <div class="comparison-cards-grid">
-            <div class="comp-card before">
-              <span class="comp-badge">Day 1</span>
-              <h4>Velvety Acanthosis Ring</h4>
-              <p class="comp-desc" id="compBeforeDesc">Deep leathery band with coarse texture along neck folds. Inflamed from previous scrubbing attempts.</p>
-            </div>
-            <div class="comp-card after">
-              <span class="comp-badge">Week 6</span>
-              <h4>Even, Brightened Tone</h4>
-              <p class="comp-desc" id="compAfterDesc">Skin texture fully smoothed, melanin dispersion normalized, clear distinction with surrounding neckline restored.</p>
+      <!-- Product Interactive Showcase Box -->
+      <section class="product-showcase-box" id="product-details">
+        <span class="product-badge-flag">Targeted Metabolic Defense</span>
+        <h3 class="product-headline">Daily Knack PCO Defense (Berberine HCl 800mg)</h3>
+        <p class="product-tagline">Engineered to restore insulin sensitivity and halt hormone-driven Acanthosis Nigricans from the root.</p>
+
+        <!-- Product Gallery -->
+        <div class="gallery-wrapper">
+          <div class="gallery-main-view">
+            <img id="mainProductImg" src="images/pco-defense-front.png" alt="Daily Knack PCO Defense Berberine bottle" />
+            <div class="gallery-thumbs">
+              <button class="thumb-btn active" onclick="switchProductImg('images/pco-defense-front.png', this)">
+                <img src="images/pco-defense-front.png" alt="Front view" />
+              </button>
+              <button class="thumb-btn" onclick="switchProductImg('images/pco-defense-angle.png', this)">
+                <img src="images/pco-defense-angle.png" alt="Angle view" />
+              </button>
+              <button class="thumb-btn" onclick="switchProductImg('images/pco-defense-detail.png', this)">
+                <img src="images/pco-defense-detail.png" alt="Detail view" />
+              </button>
+              <button class="thumb-btn" onclick="switchProductImg('images/pco-defense-back.png', this)">
+                <img src="images/pco-defense-back.png" alt="Back label" />
+              </button>
+              <button class="thumb-btn" onclick="switchProductImg('images/supplement-facts.png', this)">
+                <img src="images/supplement-facts.png" alt="Supplement facts" />
+              </button>
             </div>
           </div>
+
+          <div class="product-details-side">
+            <h4>Key Clinical Formulation Highlights:</h4>
+            <ul class="product-bullets">
+              <li><strong>800mg Granular Berberine HCl:</strong> High-potency standardized extract (97% active bark/root concentration) for maximum AMPK activation.</li>
+              <li><strong>Enhanced Bioavailability Matrix:</strong> Infused with pure olive oil and L-Leucine in vegetable cellulose capsules for rapid absorption.</li>
+              <li><strong>Addresses The Root of Dark Patches:</strong> Decreases hyperinsulinemia so skin folds stop receiving melanocyte stimulation.</li>
+              <li><strong>Supports Healthy Weight & Glucose:</strong> Balances blood sugar spikes and curbs compulsive carbohydrate cravings.</li>
+              <li><strong>Pure & Non-Irritating:</strong> Zero fillers, artificial binders, or harsh side-effect bleaches.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Supplement Facts Card -->
+        <div class="supp-facts-card">
+          <img src="images/supplement-facts.png" alt="Supplement Facts panel" onclick="switchProductImg('images/supplement-facts.png', null)" />
+          <div class="supp-facts-info">
+            <h5>Official Supplement Facts (Per 2 Capsules):</h5>
+            <p>Granular Berberine Hydrochloride Extract 97% (bark) 10mg + Granular Berberine Hydrochloride Extract 8% (bark/root) 790mg. 60 Vegetarian Capsules per bottle. Made in USA in a certified facility.</p>
+          </div>
+        </div>
+
+        <!-- Trust Badges Strip -->
+        <div class="trust-icons-strip">
+          <div class="trust-badge-item">🌿 100% Vegan</div>
+          <div class="trust-badge-item">🌾 Gluten-Free</div>
+          <div class="trust-badge-item">🚫 Non-GMO</div>
+          <div class="trust-badge-item">🧪 Allergen-Free</div>
+          <div class="trust-badge-item">🇺🇸 Made in USA</div>
         </div>
       </section>
 
       <!-- Timeline Tracker -->
       <div class="timeline-wrapper">
-        <div class="timeline-title">What To Realistically Expect (No False Claims)</div>
+        <div class="timeline-title">The Internal Turnaround: Realistic 8-Week Timeline</div>
         <div class="timeline-steps">
           <div class="timeline-step">
             <div class="step-marker">1-2</div>
             <div class="step-content">
-              <h5>Weeks 1 to 2: Texture Softens</h5>
-              <p>Rough keratin buildup begins dissolving. Velvet-like leathery skin feels noticeably smoother to the touch.</p>
+              <h5>Weeks 1 to 2: Insulin Stabilizes & Sugar Cravings Drop</h5>
+              <p>Berberine begins activating AMPK. Blood glucose spikes smooth out, afternoon fatigue decreases, and the internal trigger stimulating excess melanin begins to subside.</p>
             </div>
           </div>
           <div class="timeline-step">
             <div class="step-marker">3-4</div>
             <div class="step-content">
-              <h5>Weeks 3 to 4: Visible Fading</h5>
-              <p>Deep dark borders soften into lighter diffuse tones. Overall clarity and evenness improve significantly.</p>
+              <h5>Weeks 3 to 4: The Texture Softens & Dark Borders Fade</h5>
+              <p>Without constant insulin saturation, thick velvety keratin plaques stop reforming. The dark collars on the neck and inner thighs begin lightening into soft diffuse tones.</p>
             </div>
           </div>
           <div class="timeline-step">
             <div class="step-marker">5-8</div>
             <div class="step-content">
-              <h5>Weeks 5 to 8: Skin Reset & Freedom</h5>
-              <p>Stubborn discoloration fades to match your natural complexion. Barrier resilience prevents rebound darkening.</p>
+              <h5>Weeks 5 to 8: Skin Tone Uniformity & Full Confidence</h5>
+              <p>Skin folds seamlessly match your natural body complexion. Natural metabolic equilibrium is restored without rebound darkening or scarring.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Story Climax -->
-      <section class="story-card">
+      <!-- Story Part 4: The Transformation -->
+      <section class="transformation-card">
         <h2>The Claw Clip Moment</h2>
-        <p>
-          Last weekend, I went out for brunch with my friends. It was 84 degrees and sunny.
-        </p>
-        <p>
-          Without hesitating, without checking the mirror five times, and without anxiety—I reached into my bag, grabbed a tortoiseshell claw clip, and twisted all my hair up onto the crown of my head.
-        </p>
-        <p>
-          No turtleneck. No strategic hair placement. No scanning the room wondering if someone was staring at the back of my neck.
-        </p>
-        <p>
-          Just the cool breeze on my skin, and the quiet realization that I had finally taken my life back.
-        </p>
+        <div class="transformation-grid">
+          <div>
+            <p>
+              After four weeks on PCO Defense, I caught my reflection after an evening shower. The thick, shadowed band around the nape of my neck had completely faded into my natural skin tone. My underarms looked clean, light, and healthy.
+            </p>
+            <p>
+              Last Saturday, I went to brunch with my friends in 86-degree sunshine.
+            </p>
+            <p>
+              Without hesitating, without running to the mirror to check five times—I grabbed a tortoiseshell claw clip, gathered all my hair, and twisted it up to the crown of my head.
+            </p>
+            <p style="font-weight: 700; color: #0f172a;">
+              No turtlenecks. No hiding. No shame. Just the cool breeze on my skin, and the feeling of finally being free.
+            </p>
+          </div>
+          <img src="images/transformation-hair-up.jpg" alt="Smiling woman with hair clipped up with confidence" />
+        </div>
       </section>
 
-      <!-- Verified Reviews -->
+      <!-- Customer Reviews -->
       <section class="reviews-section">
-        <h3 class="reviews-title">Verified PCOS Patient Reviews</h3>
-        <p class="reviews-rating-sub">★★★★★ 4.9 out of 5 based on 6,000+ verified women</p>
+        <h3 class="reviews-title">Verified Women With PCOS Share Their Results</h3>
+        <p class="reviews-rating-sub">★★★★★ 4.9 out of 5 based on verified real purchases</p>
         <div class="reviews-grid">
           <div class="review-card">
             <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Finally, something gentle enough for my sensitive skin! No irritation, just smoother skin and lighter dark spots. My dark neck patches from PCOS made me self-conscious for years. Strawberry genuinely works."</p>
-            <div class="review-author">Christina B. <span class="verified-tick">✔ Verified Buyer</span></div>
+            <p class="review-text">"I suffered from dark, leathery skin on the back of my neck and armpits since I was 17. Every doctor told me to just scrub harder. PCO Defense completely changed everything. By week 4, the dark band was 80% gone, and I stopped having intense sugar crashes."</p>
+            <div class="review-author">Jessica T., 29 <span class="verified-tick">✔ Verified Buyer</span></div>
           </div>
           <div class="review-card">
             <div class="review-stars">★★★★★</div>
-            <p class="review-text">"I stopped wearing tank tops in high school because of my dark armpits. Within 3 weeks of using this cream every night after showering, the grey shadowy ring completely broke up. I can't recommend this enough."</p>
-            <div class="review-author">Elena M. <span class="verified-tick">✔ Verified Buyer</span></div>
+            <p class="review-text">"This is the only thing that tackled my PCOS dark spots from the actual root cause. Bleaching creams only burned my underarms. Taking this Berberine daily helped both my skin and my stubborn belly bloating."</p>
+            <div class="review-author">Rachel K., 34 <span class="verified-tick">✔ Verified Buyer</span></div>
           </div>
         </div>
       </section>
 
-      <!-- Offer Selector Box -->
+      <!-- Special Offer Box -->
       <section class="offer-box" id="order-section">
-        <div class="ribbon-popular">Official Special Allocation</div>
-        <h3 class="offer-headline">Try Strawberry Risk-Free For 60 Days</h3>
-        <p class="offer-sub">Dermatologist formulated specifically for PCOS-driven hyperpigmentation</p>
+        <div class="ribbon-popular">Direct Special Offer</div>
+        <h3 class="offer-headline">Experience Daily Knack PCO Defense</h3>
+        <p class="offer-sub">Take back control of your metabolic health and clear PCOS dark patches naturally</p>
 
         <div class="packages-grid">
-          <!-- Package 1 -->
+          <!-- Package 1: 1 Bottle -->
           <div class="pkg-card" onclick="selectPkg(this, 1)">
             <div class="pkg-name">1 Bottle Starter</div>
             <div class="pkg-pricing">
-              <span class="pkg-price">$39.99</span>
-              <span class="pkg-compare">$49.99</span>
+              <span class="pkg-price">$49.90</span>
+              <span class="pkg-compare">$74.99</span>
             </div>
-            <div class="pkg-desc">30-Day Supply · For mild texture & single target area</div>
+            <div class="pkg-desc">30-Day Supply (60 Capsules) · Supports initial glucose balance</div>
           </div>
 
-          <!-- Package 2 (Selected) -->
+          <!-- Package 2: 2 Bottles (Selected) -->
           <div class="pkg-card selected" onclick="selectPkg(this, 2)">
-            <div class="pkg-badge">Most Popular</div>
-            <div class="pkg-name">2 Bottles + Free Shipping</div>
+            <div class="pkg-badge">Best Value</div>
+            <div class="pkg-name">2 Bottles Complete Reset</div>
             <div class="pkg-pricing">
-              <span class="pkg-price">$63.99</span>
-              <span class="pkg-compare">$99.98</span>
+              <span class="pkg-price">$49.90 <span style="font-size: 14px; font-weight: normal; color: #64748b;">/ each</span></span>
+              <span class="pkg-compare">$149.98</span>
             </div>
-            <div class="pkg-desc">60-Day Full Reset · Recommended for Neck, Armpits & Thighs</div>
+            <div class="pkg-desc">60-Day Protocol · Complete metabolic reset for skin & hormones</div>
           </div>
         </div>
 
         <button class="primary-cta-btn" onclick="handleCheckout()">
-          Claim 20% Off With Code: BRIGHT20
+          Get Daily Knack PCO Defense Now →
         </button>
 
         <div class="cta-sub-guarantee">
-          <span>🛡️</span> 60-Day 100% Money-Back Guarantee · Safe for intimate & sensitive skin
-        </div>
-
-        <div class="trust-chips-row">
-          <div class="trust-chip">
-            🌿 Fragrance & Steroid Free
-          </div>
-          <div class="trust-chip">
-            🩺 Derm Tested for PCOS
-          </div>
-          <div class="trust-chip">
-            ⚡ Fast US & Global Shipping
-          </div>
+          <span>🛡️</span> 100% Satisfaction Guarantee · Fast Direct US Shipping · Discrete Packaging
         </div>
       </section>
 
@@ -1176,30 +1304,30 @@
         <h3 class="faq-title">Frequently Asked Questions</h3>
 
         <div class="faq-item active">
-          <div class="faq-question" onclick="toggleFaq(this)">How soon will I start seeing noticeable results?</div>
+          <div class="faq-question" onclick="toggleFaq(this)">How does Berberine fade dark patches on the neck and underarms?</div>
           <div class="faq-answer">
-            Most women notice a softening of rough, leathery texture within the first 7–10 days. Measurable fading of dark patches typically occurs by weeks 2–4, with maximum tone clarity achieved between weeks 6–8 of consistent daily application.
+            PCOS dark patches (Acanthosis Nigricans) are directly triggered by insulin resistance. Excess insulin binds to receptors on melanocytes and skin cells, triggering abnormal melanin production and thickened velvety plaques. Berberine acts on the root cause by activating AMPK, restoring insulin sensitivity, and cutting off the hormonal signal driving pigment overproduction.
           </div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">Can I safely use this on intimate areas, underarms, and neck?</div>
+          <div class="faq-question" onclick="toggleFaq(this)">How soon can I expect visible results?</div>
           <div class="faq-answer">
-            Yes. Strawberry is specifically formulated without harsh peeling acids, steroids, or drying fragrances. It is pH-balanced and completely safe for delicate skin folds, including the neck, underarms, inner thighs, elbows, and bikini area.
+            Most users feel improved energy and fewer sugar cravings within the first 7–14 days. Noticeable softening of rough, leathery skin texture occurs around weeks 3–4, with significant lightening and restoration of natural skin tone occurring across weeks 6–8 of consistent daily use.
           </div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">How is this different from hydroquinone bleaching creams?</div>
+          <div class="faq-question" onclick="toggleFaq(this)">What is the recommended dosage?</div>
           <div class="faq-answer">
-            Hydroquinone frequently causes chemical dermatitis and severe "rebound hyperpigmentation" in sensitive skin folds. Strawberry uses five synergistic, non-toxic actives (Glycolic, Tranexamic Acid, Kojic Dipalmitate, Alpha-Arbutin, and Niacinamide) that safely regulate melanin without damaging your skin barrier.
+            As a dietary supplement, adults take two (2) capsules daily with 6–8 oz of water, ideally with a meal, or as directed by a healthcare professional. Each bottle contains 60 vegetarian capsules (a full 30-day supply).
           </div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question" onclick="toggleFaq(this)">Do I have to use this forever to maintain my results?</div>
+          <div class="faq-question" onclick="toggleFaq(this)">Is PCO Defense safe for long-term use?</div>
           <div class="faq-answer">
-            No. Once your desired skin tone is restored, you can reduce usage to 2–3 times weekly for simple maintenance. Because Strawberry strengthens your skin barrier, your results are stable.
+            Yes. PCO Defense is formulated with standardized Granular Berberine Hydrochloride in a clean vegetable capsule without gluten, allergens, or synthetic hormones. As with any dietary supplement, consult your physician if you are pregnant, nursing, or taking blood sugar medications.
           </div>
         </div>
       </section>
@@ -1210,35 +1338,53 @@
   <!-- Mobile Sticky Bar -->
   <div class="mobile-sticky-bar">
     <div class="mobile-bar-info">
-      <div class="price">$39.99 <span style="font-size: 12px; color: #16a34a; font-weight: 700;">-20% OFF</span></div>
-      <div class="note">Code: BRIGHT20 Applied</div>
+      <div class="price">$49.90 <span style="font-size: 12px; color: #16a34a; font-weight: 700;">Save $25.09</span></div>
+      <div class="note">PCO Defense · In Stock</div>
     </div>
-    <button class="mobile-bar-btn" onclick="scrollToOrder()">Get Started</button>
+    <button class="mobile-bar-btn" onclick="handleCheckout()">Order Now</button>
   </div>
 
   <!-- Footer -->
   <footer>
     <div class="container">
       <p style="margin-bottom: 8px;">
-        © <span id="year"></span> Strawberry Skincare Research & Education. All rights reserved.
+        © <span id="year"></span> Her Health Review & Daily Knack. All rights reserved.
       </p>
       <p style="margin-bottom: 8px;">
         <a href="#order-section">Privacy Policy</a>
-        <a href="#order-section">Terms of Service</a>
-        <a href="#order-section">Clinical References</a>
-        <a href="#order-section">Contact Support</a>
+        <a href="#order-section">Terms & Conditions</a>
+        <a href="#order-section">Clinical Studies</a>
+        <a href="#order-section">Customer Support</a>
       </p>
       <p style="color: #94a3b8; font-size: 11px; max-width: 620px; margin: 12px auto 0;">
-        Disclaimer: The information provided in this editorial is for educational purposes and is not intended as personal medical diagnosis. Individual results may vary based on skin type and hormone management.
+        *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary.
       </p>
     </div>
   </footer>
 
   <script>
+    // Product Link
+    const PRODUCT_URL = "https://dailyknack.com/products/berberine?_su_rec=dEJ0izGTTGsNMEsE8zDkz41OuSe9YsjdNJ5dK_pPlqYe_vBcfW5H2tR_pw-lj7gFxUAoxItaPAuhtzWB2Rn2vlx6gSxi3kO2yoto78V3JSiYyaAUa1lLjoAfLJ4xWjsgQwAhY5e7gSBY1XwCo_IPRdcY6S-d9gmMg0e8LvG07PCe7yRIHDTjyFwFlxv8HFtfRUrDbUJBrqgRfVhIpDiik5sjCrIaE-542jXE-BRSreVBJ02CCTfyW508sdenlTpqskOg2iTNiUoMaxEkLtD5_5FO24DOY9b9KufpGDRE6VZ9XIHW8UNQAhj7RzShhw6LouX_Pg&_su_rec_id=612d3771-db75-446e-99d8-fc4a2bc99a26-1791821857";
+
     // Set Current Date & Year
     const dateOpts = { month: 'long', day: 'numeric', year: 'numeric' };
     document.getElementById('currentDate').innerText = 'Updated ' + new Date().toLocaleDateString('en-US', dateOpts);
     document.getElementById('year').innerText = new Date().getFullYear();
+
+    // Image switcher
+    function switchProductImg(src, btn) {
+      const img = document.getElementById('mainProductImg');
+      img.style.opacity = '0.3';
+      setTimeout(() => {
+        img.src = src;
+        img.style.opacity = '1';
+      }, 150);
+
+      if (btn) {
+        document.querySelectorAll('.thumb-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      }
+    }
 
     // Package Selector
     function selectPkg(card, pkgNum) {
@@ -1246,45 +1392,9 @@
       card.classList.add('selected');
     }
 
-    // Scroll to order
-    function scrollToOrder() {
-      document.getElementById('order-section').scrollIntoView({ behavior: 'smooth' });
-    }
-
     // Checkout handler
     function handleCheckout() {
-      // Redirect to official Strawberry PCOS hyperpigmentation page with promo code
-      window.open('https://trystrawberry.com/pages/pcos-hyperpigmentation?discount=BRIGHT20', '_blank');
-    }
-
-    // Interactive Area Comparison Tabs
-    const compData = {
-      neck: {
-        beforeTitle: "Velvety Acanthosis Ring",
-        beforeDesc: "Deep leathery band with coarse texture along neck folds. Inflamed from previous scrubbing attempts.",
-        afterTitle: "Even, Brightened Tone",
-        afterDesc: "Skin texture fully smoothed, melanin dispersion normalized, clear distinction with surrounding neckline restored."
-      },
-      underarms: {
-        beforeTitle: "Shadowed Friction Darkness",
-        beforeDesc: "Grey-brown hyperpigmentation extending across the axillary fold. Irritated from shaving and deodorants.",
-        afterTitle: "Clear, Clean Underarms",
-        afterDesc: "Discoloration faded to match natural skin tone. Skin feels soft, calm, and free of friction-induced redness."
-      },
-      thighs: {
-        beforeTitle: "Inner Thigh Friction Patches",
-        beforeDesc: "Dark, thickened friction marks along inner thigh contact zones aggravated by insulin resistance.",
-        afterTitle: "Smooth, Consistent Complexion",
-        afterDesc: "Noticeable reduction in hyperpigmented perimeter. Skin texture is supple, hydrated, and fully uniform."
-      }
-    };
-
-    function switchArea(area, btn) {
-      document.querySelectorAll('.comparison-tab-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const data = compData[area];
-      document.getElementById('compBeforeDesc').innerText = data.beforeDesc;
-      document.getElementById('compAfterDesc').innerText = data.afterDesc;
+      window.open(PRODUCT_URL, '_blank');
     }
 
     // FAQ Toggle
