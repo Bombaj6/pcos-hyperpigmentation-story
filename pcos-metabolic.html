@@ -276,46 +276,112 @@
       color: var(--primary);
     }
 
-    /* 3 Pillars Callout Cards (Weight, Periods, Blood Sugar) */
+    /* 3 Pillars Photo-Illustrated Cards (Weight, Periods, Blood Sugar) */
     .pillars-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      margin: 24px 0;
-    }
-    .pillar-card {
-      background: #fdfbf9;
-      border: 1px solid #ebdcd6;
-      border-radius: 16px;
-      padding: 20px;
       display: flex;
-      gap: 18px;
-      align-items: flex-start;
+      flex-direction: column;
+      gap: 22px;
+      margin: 26px 0;
     }
-    .pillar-icon {
-      font-size: 28px;
+    .pillar-card-detailed {
       background: #ffffff;
       border: 1px solid #ebdcd6;
-      border-radius: 12px;
-      width: 54px;
-      height: 54px;
-      display: flex;
+      border-radius: 18px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 20px;
       align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.03);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .pillar-card-detailed:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(158, 70, 56, 0.09);
+    }
+    @media (max-width: 640px) {
+      .pillar-card-detailed {
+        grid-template-columns: 1fr;
+      }
+    }
+    .pillar-image-wrap {
+      position: relative;
+      height: 100%;
+      min-height: 210px;
+      background: #f1edea;
+    }
+    .pillar-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .pillar-img-badge {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(4px);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .pillar-card-detailed .pillar-content {
+      padding: 20px 22px 20px 0;
+    }
+    @media (max-width: 640px) {
+      .pillar-card-detailed .pillar-content {
+        padding: 0 20px 20px 20px;
+      }
+    }
+    .pillar-tag {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 3px 10px;
+      border-radius: 6px;
+      margin-bottom: 8px;
     }
     .pillar-content h4 {
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 800;
       color: #0f172a;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
+      line-height: 1.3;
     }
     .pillar-content p {
       font-size: 14px;
       color: #475569;
+      line-height: 1.6;
       margin-bottom: 0;
-      line-height: 1.55;
+    }
+    .inline-story-photo {
+      border-radius: 14px;
+      overflow: hidden;
+      margin: 20px 0;
+      border: 1px solid #ebdcd6;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .inline-story-photo img {
+      width: 100%;
+      max-height: 280px;
+      object-fit: cover;
+    }
+    .inline-story-caption {
+      padding: 8px 14px;
+      font-size: 12px;
+      color: var(--text-muted);
+      background: #fdfbf9;
+      border-top: 1px solid #ebdcd6;
+      font-style: italic;
     }
 
     /* Warning Callout */
@@ -1097,6 +1163,14 @@
         <p>
           <strong>Up 1.5 pounds. Up 2 pounds. Another inch added to my lower belly.</strong>
         </p>
+
+        <div class="inline-story-photo">
+          <img src="images/pcos-belly-bloating.jpg" alt="PCOS abdominal bloating and stubborn lower belly inflammation" />
+          <div class="inline-story-caption">
+            "No matter how clean my diet was or how many miles I ran, the lower belly fullness and chronic metabolic inflammation wouldn't budge."
+          </div>
+        </div>
+
         <p>
           Meanwhile, my menstrual cycle had become a cruel phantom. 45 days would pass with nothing. Then 75 days. Then 110 days. Every couple of months, I’d find myself buying drugstore pregnancy tests with trembling hands, only to stare at another heartbreaking negative line in the bathroom mirror.
         </p>
@@ -1127,35 +1201,47 @@
           When your cells become deaf to insulin, your pancreas goes into overdrive, pumping out up to <strong>400% more insulin</strong> than normal. Here is exactly what happens next:
         </p>
 
-        <!-- 3 Pillars Grid -->
+        <!-- 3 Pillars Photo-Illustrated Grid -->
         <div class="pillars-grid">
-          <!-- Pillar 1: Weight -->
-          <div class="pillar-card">
-            <div class="pillar-icon">⚖️</div>
+          <!-- Pillar 1: Weight Gain & Visceral Fat Lock -->
+          <div class="pillar-card-detailed">
+            <div class="pillar-image-wrap">
+              <img src="images/waist-tape-measure.jpg" alt="PCOS Stubborn Belly Fat and Measuring Tape" />
+              <span class="pillar-img-badge">Term 1: The Fat-Lock</span>
+            </div>
             <div class="pillar-content">
-              <h4>1. The "Fat-Lock" Effect (Stubborn Visceral Weight)</h4>
+              <span class="pillar-tag">Hormonal Weight Resistance</span>
+              <h4>1. The "Fat-Lock" Effect (Why 1,200 Calories Fails)</h4>
               <p>
-                Insulin is not just a blood sugar shuttle—it is the human body's primary <strong>fat-storage hormone</strong>. High circulating insulin completely blocks <em>lipolysis</em> (fat breakdown). It forcibly shunts every calorie into visceral fat cells around your belly and waist, while keeping fat stores locked tight. You can starve on 1,000 calories, and your body will burn muscle before it touches your belly fat.
+                Insulin is not just a blood sugar shuttle—it is the human body's primary <strong>fat-storage hormone</strong>. High circulating insulin completely blocks <em>lipolysis</em> (fat breakdown). It forcibly shunts every calorie into visceral fat cells around your lower abdomen, while keeping fat stores locked tight. You can starve on 1,000 calories, and your body will burn muscle before it touches your belly fat.
               </p>
             </div>
           </div>
 
-          <!-- Pillar 2: Irregular Periods -->
-          <div class="pillar-card">
-            <div class="pillar-icon">🗓️</div>
+          <!-- Pillar 2: Irregular & Missing Periods -->
+          <div class="pillar-card-detailed">
+            <div class="pillar-image-wrap">
+              <img src="images/period-calendar-tracker.jpg" alt="Irregular Menstrual Cycle and Period Calendar Tracker" />
+              <span class="pillar-img-badge">Term 2: Anovulatory Cycles</span>
+            </div>
             <div class="pillar-content">
-              <h4>2. The Ovary Blockade (Missing & Anovulatory Cycles)</h4>
+              <span class="pillar-tag">Missing & Irregular Cycles</span>
+              <h4>2. The Ovary Blockade (Why Periods Vanish For 90+ Days)</h4>
               <p>
                 Your ovaries have direct insulin receptors. When flooded with excess insulin, the theca cells inside the ovaries are triggered to overproduce <strong>male hormones (testosterone and androgens)</strong>. High androgens arrest egg follicles in an immature state—preventing ovulation. Without ovulation, your body cannot produce progesterone, leaving you stranded for months without a natural period.
               </p>
             </div>
           </div>
 
-          <!-- Pillar 3: Blood Sugar -->
-          <div class="pillar-card">
-            <div class="pillar-icon">📉</div>
+          <!-- Pillar 3: High Blood Sugar & Crashes -->
+          <div class="pillar-card-detailed">
+            <div class="pillar-image-wrap">
+              <img src="images/blood-sugar-meter.jpg" alt="Blood Sugar and Glucose Testing Meter" />
+              <span class="pillar-img-badge">Term 3: Glucose Instability</span>
+            </div>
             <div class="pillar-content">
-              <h4>3. The Blood Sugar Rollercoaster (Shaky Crashes & Cravings)</h4>
+              <span class="pillar-tag">High Blood Sugar & Crashes</span>
+              <h4>3. The Glucose Rollercoaster (The 2:00 PM Crash & Cravings)</h4>
               <p>
                 Because cells resist insulin, glucose cannot enter muscle tissue to be used as cellular fuel. Your cells are literally starving in a sea of sugar! Your brain triggers emergency hunger signals—causing overwhelming, compulsive cravings for carbs, followed by reactive hypoglycemia (shaky hands, irritability, anxiety, and afternoon brain fog).
               </p>
@@ -1236,6 +1322,13 @@
         <p style="font-size: 18px; font-weight: 800; color: #0f172a;">
           A purified plant alkaloid called <span style="color: var(--primary);">Berberine Hydrochloride</span>.
         </p>
+
+        <div class="inline-story-photo">
+          <img src="images/energy-wellness.jpg" alt="Restored metabolic energy, vital balance, and stable blood sugar" />
+          <div class="inline-story-caption">
+            "Activating AMPK unlocks stored cellular energy, stabilizing glucose so your metabolism works with you rather than against you."
+          </div>
+        </div>
 
         <!-- Mechanism Grid -->
         <div class="mechanism-box">
