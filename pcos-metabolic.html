@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>The PCOS Metabolic Trap | Why Dieting Fails, Periods Vanish & Blood Sugar Spikes (And The Natural Reset)</title>
+  <meta name="description" content="A real investigative story on PCOS insulin resistance: why weight won't drop, cycles disappear for months, and blood sugar crashes leave you exhausted. Discover the natural AMPK reset restoring metabolic balance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet" />
+  
+  <style>
+    :root {
+      --primary: #9e4638;
+      --primary-dark: #7f3226;
+      --primary-light: #fdf2f0;
+      --accent: #15803d;
+      --accent-light: #dcfce7;
+      --navy: #0f172a;
+      --text-main: #334155;
+      --text-muted: #64748b;
+      --bg-cream: #faf7f5;
+      --bg-white: #ffffff;
+      --border-color: #ebdcd6;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --shadow-sm: 0 2px 8px rgba(158, 70, 56, 0.08);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 16px 36px rgba(158, 70, 56, 0.12);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      line-height: 1.7;
+      font-size: 16.5px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* Top Sticky Urgent Bar */
+    .top-ticker {
+      background: #111827;
+      color: #f3f4f6;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 10px 14px;
+      text-align: center;
+    }
+    .top-ticker span.highlight {
+      background: var(--primary);
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      margin-left: 6px;
+      display: inline-block;
+    }
+
+    /* Masthead */
+    .masthead {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-color);
+      padding: 14px 20px;
+    }
+    .masthead-inner {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .publication-logo {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #111827;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .publication-logo span {
+      background: var(--primary-light);
+      color: var(--primary);
+      font-family: var(--font-sans);
+      font-size: 10px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .masthead-nav {
+      display: flex;
+      gap: 16px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .masthead-nav a {
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+    .masthead-nav a.active {
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 2px;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 18px;
+    }
+
+    /* Article Hero */
+    .article-hero {
+      padding: 32px 0 20px;
+    }
+    .category-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary);
+      background: var(--primary-light);
+      border: 1px solid #f2c7c5;
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    .article-title {
+      font-family: var(--font-serif);
+      font-size: 32px;
+      line-height: 1.25;
+      color: #0f172a;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+    .article-subtitle {
+      font-size: 17.5px;
+      line-height: 1.55;
+      color: #475569;
+      margin-bottom: 22px;
+      font-weight: 400;
+    }
+
+    /* Author Meta */
+    .author-meta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 0;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 24px;
+    }
+    .author-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #9e4638, #d88073);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(158, 70, 56, 0.25);
+    }
+    .author-details h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .author-details p {
+      font-size: 12.5px;
+      color: var(--text-muted);
+    }
+
+    /* Featured Story Hero Image */
+    .story-hero-media {
+      margin-bottom: 26px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-color);
+      background: #fff;
+    }
+    .story-hero-media img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+    }
+    .media-caption {
+      padding: 10px 16px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      background: #fdfbf9;
+      border-top: 1px solid #f1e5e0;
+      font-style: italic;
+    }
+
+    /* Content Card */
+    .story-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 32px 28px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #f0e6e1;
+      margin-bottom: 26px;
+    }
+    .story-card p {
+      margin-bottom: 18px;
+      font-size: 16.5px;
+      color: #27303f;
+    }
+    .story-card p:last-child {
+      margin-bottom: 0;
+    }
+    .dropcap::first-letter {
+      font-family: var(--font-serif);
+      font-size: 64px;
+      float: left;
+      line-height: 0.8;
+      padding-right: 12px;
+      padding-top: 4px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .story-card h2 {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      color: #0f172a;
+      margin: 28px 0 14px;
+      line-height: 1.3;
+    }
+    .story-card h3 {
+      font-size: 18px;
+      color: #0f172a;
+      margin: 22px 0 10px;
+      font-weight: 700;
+    }
+
+    /* Emotional Callout */
+    .emotional-quote {
+      background: #fff8f7;
+      border-left: 4px solid var(--primary);
+      padding: 20px 22px;
+      border-radius: 0 14px 14px 0;
+      margin: 24px 0;
+      font-style: italic;
+      color: #742523;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    .emotional-quote strong {
+      font-style: normal;
+      display: block;
+      margin-top: 8px;
+      font-size: 13.5px;
+      color: var(--primary);
+    }
+
+    /* 3 Pillars Callout Cards (Weight, Periods, Blood Sugar) */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .pillar-card {
+      background: #fdfbf9;
+      border: 1px solid #ebdcd6;
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .pillar-icon {
+      font-size: 28px;
+      background: #ffffff;
+      border: 1px solid #ebdcd6;
+      border-radius: 12px;
+      width: 54px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    .pillar-content h4 {
+      font-size: 17px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+    .pillar-content p {
+      font-size: 14px;
+      color: #475569;
+      margin-bottom: 0;
+      line-height: 1.55;
+    }
+
+    /* Warning Callout */
+    .warning-box {
+      background: #fff1f2;
+      border: 1px solid #fecdd3;
+      border-radius: 14px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+    .warning-box-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #9f1239;
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+    .warning-box p {
+      font-size: 14.5px;
+      color: #881337;
+      margin-bottom: 0;
+    }
+
+    /* Mechanism Comparison Box */
+    .mechanism-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 24px;
+      margin: 26px 0;
+    }
+    .mechanism-box h4 {
+      font-size: 16.5px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .mechanism-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 600px) {
+      .mechanism-grid { grid-template-columns: 1fr; }
+    }
+    .mechanism-item {
+      background: #ffffff;
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid #edf2f7;
+    }
+    .mechanism-item.bad {
+      border-left: 4px solid #ef4444;
+    }
+    .mechanism-item.good {
+      border-left: 4px solid #16a34a;
+    }
+    .mechanism-item .label {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .mechanism-item.bad .label { color: #dc2626; }
+    .mechanism-item.good .label { color: #16a34a; }
+    .mechanism-item h5 {
+      font-size: 15px;
+      color: #1e293b;
+      margin-bottom: 6px;
+    }
+    .mechanism-item p {
+      font-size: 13px;
+      color: #475569;
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    /* Interactive Symptom Checker Quiz */
+    .symptom-quiz-card {
+      background: #ffffff;
+      border: 2px solid var(--border-color);
+      border-radius: 18px;
+      padding: 24px;
+      margin: 28px 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .quiz-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .quiz-sub {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .quiz-checkbox-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .quiz-option {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fdfbf9;
+      border: 1px solid #ebdcd6;
+      border-radius: 10px;
+      padding: 12px 14px;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.2s;
+    }
+    .quiz-option:hover {
+      background: #fff5f3;
+      border-color: var(--primary);
+    }
+    .quiz-option input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--primary);
+      cursor: pointer;
+    }
+    .quiz-option span {
+      font-size: 14px;
+      font-weight: 600;
+      color: #334155;
+    }
+    .quiz-result-box {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 10px;
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      display: none;
+    }
+    .quiz-result-box.active {
+      display: block;
+    }
+    .quiz-result-box h5 {
+      color: #991b1b;
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .quiz-result-box p {
+      font-size: 13px;
+      color: #7f1d1d;
+      margin-bottom: 0;
+    }
+
+    /* Product Interactive Showcase Box */
+    .product-showcase-box {
+      background: linear-gradient(180deg, #ffffff 0%, #fdf8f6 100%);
+      border: 2px solid #ecd5ce;
+      border-radius: 22px;
+      padding: 28px 24px;
+      margin: 32px 0 24px;
+      box-shadow: var(--shadow-md);
+    }
+    .product-badge-flag {
+      background: #2e7d32;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+    .product-headline {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      color: #0f172a;
+      margin-bottom: 8px;
+      line-height: 1.25;
+    }
+    .product-tagline {
+      font-size: 14.5px;
+      color: #64748b;
+      margin-bottom: 22px;
+    }
+
+    /* Gallery with Main Preview & Thumbnails */
+    .gallery-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 620px) {
+      .gallery-wrapper { grid-template-columns: 1fr; }
+    }
+    .gallery-main-view {
+      background: #ffffff;
+      border: 1px solid #ebdcd6;
+      border-radius: 16px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+    .gallery-main-view img {
+      max-height: 280px;
+      margin: 0 auto;
+      object-fit: contain;
+      transition: opacity 0.2s ease-in-out;
+    }
+    .gallery-thumbs {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .thumb-btn {
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 4px;
+      background: #fff;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .thumb-btn.active {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(158, 70, 56, 0.2);
+    }
+    .thumb-btn img {
+      width: 100%;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .product-details-side h4 {
+      font-size: 16.5px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+    .product-bullets {
+      list-style: none;
+      margin: 12px 0 18px;
+    }
+    .product-bullets li {
+      position: relative;
+      padding-left: 26px;
+      font-size: 14px;
+      color: #334155;
+      margin-bottom: 8px;
+      line-height: 1.45;
+    }
+    .product-bullets li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #2e7d32;
+      font-weight: 800;
+    }
+
+    /* Supplement Facts Highlight */
+    .supp-facts-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 16px;
+      margin: 20px 0;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    @media (max-width: 540px) {
+      .supp-facts-card { flex-direction: column; text-align: center; }
+    }
+    .supp-facts-card img {
+      width: 120px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      cursor: pointer;
+      background: #fff;
+      padding: 4px;
+    }
+    .supp-facts-info h5 {
+      font-size: 15px;
+      color: #0f172a;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .supp-facts-info p {
+      font-size: 13px;
+      color: #64748b;
+      margin-bottom: 0;
+      line-height: 1.45;
+    }
+
+    /* Trust Icons Row */
+    .trust-icons-strip {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 18px 0;
+      padding: 12px;
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid #f1e5e0;
+    }
+    .trust-badge-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #475569;
+    }
+
+    /* Transformation Story Card */
+    .transformation-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px 26px;
+      margin-bottom: 26px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+    .transformation-grid {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 20px;
+      align-items: center;
+      margin-top: 14px;
+    }
+    @media (max-width: 580px) {
+      .transformation-grid { grid-template-columns: 1fr; }
+    }
+    .transformation-grid img {
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      max-height: 260px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    /* Timeline Tracker */
+    .timeline-wrapper {
+      margin: 26px 0;
+      background: #faf6f5;
+      border: 1px dashed #e3cfca;
+      border-radius: 16px;
+      padding: 22px;
+    }
+    .timeline-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #2b1d1d;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    .timeline-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .timeline-step {
+      display: flex;
+      gap: 14px;
+      background: #ffffff;
+      padding: 14px 16px;
+      border-radius: 12px;
+      border: 1px solid #eee1dd;
+    }
+    .step-marker {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .step-content h5 {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .step-content p {
+      font-size: 13px;
+      color: #64748b;
+      margin-bottom: 0;
+    }
+
+    /* Verified Reviews */
+    .reviews-section {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px 24px;
+      margin-bottom: 26px;
+      border: 1px solid var(--border-color);
+    }
+    .reviews-title {
+      text-align: center;
+      font-family: var(--font-serif);
+      font-size: 24px;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+    .reviews-rating-sub {
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+    }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .review-card {
+      background: #faf8f7;
+      border: 1px solid #ebdcd6;
+      border-radius: 14px;
+      padding: 18px;
+    }
+    .review-stars {
+      color: #eab308;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+    .review-text {
+      font-size: 14.5px;
+      color: #334155;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+    .review-author {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .verified-tick {
+      color: #16a34a;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    /* Order Section */
+    .offer-box {
+      background: #ffffff;
+      border: 2px solid var(--primary);
+      border-radius: 22px;
+      padding: 32px 26px;
+      box-shadow: var(--shadow-lg);
+      margin: 32px 0 24px;
+      position: relative;
+    }
+    .ribbon-popular {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary);
+      color: #ffffff;
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 5px 16px;
+      border-radius: 999px;
+      box-shadow: 0 4px 10px rgba(158, 70, 56, 0.3);
+    }
+    .offer-headline {
+      text-align: center;
+      font-family: var(--font-serif);
+      font-size: 26px;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+    .offer-sub {
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    /* Package Selector */
+    .packages-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 520px) {
+      .packages-grid { grid-template-columns: 1fr; }
+    }
+    .pkg-card {
+      border: 2px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 18px 16px;
+      cursor: pointer;
+      transition: all 0.2s;
+      background: #fafaf9;
+      position: relative;
+    }
+    .pkg-card.selected {
+      border-color: var(--primary);
+      background: #fff8f7;
+      box-shadow: 0 4px 14px rgba(158, 70, 56, 0.12);
+    }
+    .pkg-badge {
+      position: absolute;
+      top: -10px;
+      right: 12px;
+      background: #16a34a;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+    .pkg-name {
+      font-size: 15.5px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .pkg-pricing {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+    .pkg-price {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .pkg-compare {
+      font-size: 14px;
+      color: #94a3b8;
+      text-decoration: line-through;
+    }
+    .pkg-desc {
+      font-size: 12.5px;
+      color: #64748b;
+    }
+
+    /* CTA Button */
+    .primary-cta-btn {
+      display: block;
+      width: 100%;
+      background: linear-gradient(180deg, #9e4638 0%, #822e23 100%);
+      color: #ffffff;
+      font-size: 19px;
+      font-weight: 800;
+      text-align: center;
+      padding: 18px 24px;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 8px 22px rgba(158, 70, 56, 0.35);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .primary-cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(158, 70, 56, 0.45);
+    }
+    .cta-sub-guarantee {
+      text-align: center;
+      font-size: 12.5px;
+      color: #64748b;
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* FAQ Accordion */
+    .faq-section {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px 24px;
+      margin-bottom: 26px;
+      border: 1px solid var(--border-color);
+    }
+    .faq-title {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      color: #0f172a;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .faq-item {
+      border-bottom: 1px solid #f1e5e0;
+      padding: 14px 0;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-question {
+      font-size: 15.5px;
+      font-weight: 700;
+      color: #1e293b;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 18px;
+      color: var(--primary);
+      font-weight: 800;
+      transition: transform 0.2s;
+    }
+    .faq-item.active .faq-question::after {
+      content: '−';
+    }
+    .faq-answer {
+      font-size: 14px;
+      color: #475569;
+      line-height: 1.6;
+      margin-top: 8px;
+      display: none;
+    }
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* Mobile Sticky Bar */
+    .mobile-sticky-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      border-top: 1px solid #ebdcd6;
+      padding: 12px 18px;
+      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+      z-index: 999;
+    }
+    @media (max-width: 768px) {
+      .mobile-sticky-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+      }
+      body {
+        padding-bottom: 74px;
+      }
+    }
+    .mobile-bar-info .price {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .mobile-bar-info .note {
+      font-size: 11px;
+      color: #64748b;
+    }
+    .mobile-bar-btn {
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 14px;
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      flex-shrink: 0;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 30px 18px;
+      text-align: center;
+      font-size: 12px;
+      color: #94a3b8;
+      background: #fdfbf9;
+    }
+    footer a {
+      color: var(--text-muted);
+      margin: 0 8px;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Urgent Bar -->
+  <div class="top-ticker">
+    ⚡ SPECIAL CLINICAL ADVISORY: 70%+ OF WOMEN WITH PCOS SUFFER FROM UNRECOGNIZED INSULIN RESISTANCE
+    <span class="highlight">METABOLIC RESET PROTOCOL</span>
+  </div>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="publication-logo">
+        HER HEALTH INVESTIGATION
+        <span>Metabolic & Endocrinology</span>
+      </div>
+      <div class="masthead-nav">
+        <a href="index.html">Skin & Acanthosis</a>
+        <a href="pcos-metabolic.html" class="active">Weight, Period & Glucose</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Article Hero -->
+    <article class="article-hero">
+      <div class="category-badge">
+        <span>⚖️</span> PCOS Metabolic Deep Dive
+      </div>
+      <h1 class="article-title">
+        "I Ate 1,200 Calories A Day And Spent 5 Days In The Gym. My Weight Kept Climbing, My Periods Vanished For 90 Days, And My Blood Sugar Crashed Daily. My Doctor Said 'Try Harder'—Until I Uncovered The Hidden Insulin Trap."
+      </h1>
+      <p class="article-subtitle">
+        Why standard diet plans and birth control pills fail women with PCOS, how high insulin traps fat cells while starving ovaries of ovulation, and the natural plant alkaloid resetting metabolism from within.
+      </p>
+
+      <!-- Author Byline -->
+      <div class="author-meta">
+        <div class="author-avatar">SL</div>
+        <div class="author-details">
+          <h4>By Sarah Lawson, Certified Integrative Health Researcher</h4>
+          <p>Endocrine & Women's Metabolic Health · 9 Min Read</p>
+        </div>
+      </div>
+
+      <!-- Hero Story Image -->
+      <div class="story-hero-media">
+        <img src="images/frustrated-woman.jpg" alt="Frustrated woman dealing with PCOS symptoms" />
+        <div class="media-caption">
+          "I was told to 'just eat less and exercise more' while my body felt completely broken from the inside out."
+        </div>
+      </div>
+
+      <!-- Story Part 1: The Frustration & Shame -->
+      <section class="story-card">
+        <p class="dropcap">
+          For three years, I felt like my own body was working against me as an undercover saboteur.
+        </p>
+        <p>
+          I logged every single gram of food into a calorie counting app. I weighed grilled chicken breasts on a digital kitchen scale. I skipped dinners with friends, choked down dry salads, and dragged myself to 6:00 AM spin classes until my knees throbbed.
+        </p>
+        <p>
+          And every Monday morning, when I stepped onto the bathroom scale?
+        </p>
+        <p>
+          <strong>Up 1.5 pounds. Up 2 pounds. Another inch added to my lower belly.</strong>
+        </p>
+        <p>
+          Meanwhile, my menstrual cycle had become a cruel phantom. 45 days would pass with nothing. Then 75 days. Then 110 days. Every couple of months, I’d find myself buying drugstore pregnancy tests with trembling hands, only to stare at another heartbreaking negative line in the bathroom mirror.
+        </p>
+        <p>
+          And by 2:30 PM every afternoon at my desk? The horrific brain fog would roll in. My hands would start trembling, my heart would race, and a primal, terrifying craving for pure sugar would take over my entire mind.
+        </p>
+
+        <div class="emotional-quote">
+          "My doctor glanced at my lab work, adjusted his glasses, and said: 'Your fasting blood sugar is getting into prediabetic territory. You just need more willpower. Go back on birth control to force a bleed, and eat less.' I sat in my car in the parking lot and sobbed until I hyperventilated."
+          <strong>— Sarah Lawson</strong>
+        </div>
+
+        <p>
+          Willpower wasn't the problem. Discipline wasn't the problem. 
+        </p>
+        <p>
+          What nobody in standard medicine had told me was that <strong>Polycystic Ovary Syndrome is primarily a METABOLIC disease driven by chronic Hyperinsulinemia.</strong>
+        </p>
+      </section>
+
+      <!-- The 3 Interlocked Symptoms Section -->
+      <section class="story-card">
+        <h2>The Triad: How Insulin Resistance Controls Your Entire Body</h2>
+        <p>
+          Over 70% to 80% of women with PCOS suffer from severe cellular insulin resistance—regardless of whether they are considered "lean" or have excess weight.
+        </p>
+        <p>
+          When your cells become deaf to insulin, your pancreas goes into overdrive, pumping out up to <strong>400% more insulin</strong> than normal. Here is exactly what happens next:
+        </p>
+
+        <!-- 3 Pillars Grid -->
+        <div class="pillars-grid">
+          <!-- Pillar 1: Weight -->
+          <div class="pillar-card">
+            <div class="pillar-icon">⚖️</div>
+            <div class="pillar-content">
+              <h4>1. The "Fat-Lock" Effect (Stubborn Visceral Weight)</h4>
+              <p>
+                Insulin is not just a blood sugar shuttle—it is the human body's primary <strong>fat-storage hormone</strong>. High circulating insulin completely blocks <em>lipolysis</em> (fat breakdown). It forcibly shunts every calorie into visceral fat cells around your belly and waist, while keeping fat stores locked tight. You can starve on 1,000 calories, and your body will burn muscle before it touches your belly fat.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Irregular Periods -->
+          <div class="pillar-card">
+            <div class="pillar-icon">🗓️</div>
+            <div class="pillar-content">
+              <h4>2. The Ovary Blockade (Missing & Anovulatory Cycles)</h4>
+              <p>
+                Your ovaries have direct insulin receptors. When flooded with excess insulin, the theca cells inside the ovaries are triggered to overproduce <strong>male hormones (testosterone and androgens)</strong>. High androgens arrest egg follicles in an immature state—preventing ovulation. Without ovulation, your body cannot produce progesterone, leaving you stranded for months without a natural period.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Blood Sugar -->
+          <div class="pillar-card">
+            <div class="pillar-icon">📉</div>
+            <div class="pillar-content">
+              <h4>3. The Blood Sugar Rollercoaster (Shaky Crashes & Cravings)</h4>
+              <p>
+                Because cells resist insulin, glucose cannot enter muscle tissue to be used as cellular fuel. Your cells are literally starving in a sea of sugar! Your brain triggers emergency hunger signals—causing overwhelming, compulsive cravings for carbs, followed by reactive hypoglycemia (shaky hands, irritability, anxiety, and afternoon brain fog).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Warning Callout -->
+        <div class="warning-box">
+          <div class="warning-box-title">
+            <span>⚠️</span> The Birth Control Trap
+          </div>
+          <p>
+            Birth control pills do not "fix" irregular periods in PCOS. They induce an artificial chemical withdrawal bleed, masking the condition while worsening underlying insulin resistance and liver stress. When you eventually stop the pill, the missing periods and weight gain return with a vengeance.
+          </p>
+        </div>
+      </section>
+
+      <!-- Interactive Symptom Quiz -->
+      <section class="symptom-quiz-card">
+        <div class="quiz-title">
+          <span>🩺</span> PCOS Insulin Resistance Self-Assessment
+        </div>
+        <p class="quiz-sub">Select the symptoms you regularly experience below:</p>
+        <div class="quiz-checkbox-list">
+          <label class="quiz-option">
+            <input type="checkbox" onchange="checkQuiz()" />
+            <span>Stubborn lower belly fat that refuses to budge despite calorie restriction</span>
+          </label>
+          <label class="quiz-option">
+            <input type="checkbox" onchange="checkQuiz()" />
+            <span>Cycles longer than 35 days, missed periods, or highly unpredictable flow</span>
+          </label>
+          <label class="quiz-option">
+            <input type="checkbox" onchange="checkQuiz()" />
+            <span>Severe sugar/carb cravings or intense energy crashes 1–2 hours after meals</span>
+          </label>
+          <label class="quiz-option">
+            <input type="checkbox" onchange="checkQuiz()" />
+            <span>Dark velvety patches on the neck or underarms (Acanthosis Nigricans)</span>
+          </label>
+          <label class="quiz-option">
+            <input type="checkbox" onchange="checkQuiz()" />
+            <span>Unexplained fatigue, morning sluggishness, or brain fog</span>
+          </label>
+        </div>
+        <div class="quiz-result-box" id="quizResult">
+          <h5>Diagnostic Indicator: High Insulin Resistance Probability</h5>
+          <p>
+            Your symptoms indicate that your cellular glucose receptors are blocked by hyperinsulinemia. Traditional dieting will only trigger metabolic slowdown. You need a targeted AMPK activator to restore insulin sensitivity from within.
+          </p>
+        </div>
+      </section>
+
+      <!-- Story Part 2: The Breakthrough -->
+      <section class="story-card">
+        <h2>The Discovery: Activating The "AMPK" Metabolic Switch</h2>
+        <p>
+          Eight months ago, I was referred to an integrative reproductive endocrinologist. She took one look at my blood panel and said:
+        </p>
+        <p style="font-style: italic; color: #475569; padding-left: 14px; border-left: 2px solid #cbd5e1;">
+          "Sarah, stop torturing yourself with calorie cuts. You cannot out-exercise a hormone that is actively locked in storage mode. We need to activate your body's AMPK enzyme."
+        </p>
+        <p>
+          <strong>AMPK (Adenosine Monophosphate-Activated Protein Kinase)</strong> is known in biochemical science as the body's <em>"master metabolic switch."</em>
+        </p>
+        <p>
+          When AMPK is turned ON:
+        </p>
+        <ul style="margin: 12px 0 18px 20px; color: #334155; font-size: 15.5px;">
+          <li style="margin-bottom: 8px;">It commands muscle cells to absorb glucose directly from the bloodstream <strong>without needing excess insulin</strong>.</li>
+          <li style="margin-bottom: 8px;">It turns OFF the fat-storage switch and turns ON fat oxidation, targeting stubborn visceral belly fat.</li>
+          <li style="margin-bottom: 8px;">It lowers circulating luteinizing hormone and ovarian androgens, allowing the ovary to naturally mature an egg follicle and restore monthly ovulation!</li>
+        </ul>
+        <p>
+          And the single most potent, clinically verified natural activator of AMPK? 
+        </p>
+        <p style="font-size: 18px; font-weight: 800; color: #0f172a;">
+          A purified plant alkaloid called <span style="color: var(--primary);">Berberine Hydrochloride</span>.
+        </p>
+
+        <!-- Mechanism Grid -->
+        <div class="mechanism-box">
+          <h4><span>🔬</span> The Cellular Shift: With vs. Without Berberine</h4>
+          <div class="mechanism-grid">
+            <div class="mechanism-item bad">
+              <span class="label">PCOS Without Berberine</span>
+              <h5>The Insulin Trap</h5>
+              <p>Cells resist glucose → Pancreas floods insulin → Fat storage permanently locked ON → Ovaries make excess testosterone → Ovulation stops & periods disappear.</p>
+            </div>
+            <div class="mechanism-item good">
+              <span class="label">With Daily Knack PCO Defense</span>
+              <h5>AMPK Activated</h5>
+              <p>Berberine activates AMPK → Cells absorb sugar freely → Insulin levels drop → Belly fat unlocked → Androgens plummet → Normal ovulation & cycle restored!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Interactive Showcase Box -->
+      <section class="product-showcase-box" id="product-details">
+        <span class="product-badge-flag">Targeted Metabolic Defense</span>
+        <h3 class="product-headline">Daily Knack PCO Defense (Granular Berberine HCl 800mg)</h3>
+        <p class="product-tagline">The specialized AMPK activator formulated to target PCOS weight resistance, irregular cycles, and glucose crashes at the source.</p>
+
+        <!-- Product Gallery -->
+        <div class="gallery-wrapper">
+          <div class="gallery-main-view">
+            <img id="mainProductImg" src="images/pco-defense-front.png" alt="Daily Knack PCO Defense Berberine bottle" />
+            <div class="gallery-thumbs">
+              <button class="thumb-btn active" onclick="switchProductImg('images/pco-defense-front.png', this)">
+                <img src="images/pco-defense-front.png" alt="Front view" />
+              </button>
+              <button class="thumb-btn" onclick="switchProductImg('images/pco-defense-angle.png', this)">
+                <img src="images/pco-defense-angle.png" alt="Angle view" />
+              </button>
+              <button class="thumb-btn" onclick="switchProductImg('images/pco-defense-detail.png', this)">
+                <img src="images/pco-defense-detail.png" alt="Detail view" />
+              </button>
+              <button class="thumb-btn" onclick="switchProductImg('images/pco-defense-back.png', this)">
+                <img src="images/pco-defense-back.png" alt="Back label" />
+              </button>
+              <button class="thumb-btn" onclick="switchProductImg('images/supplement-facts.png', this)">
+                <img src="images/supplement-facts.png" alt="Supplement facts" />
+              </button>
+            </div>
+          </div>
+
+          <div class="product-details-side">
+            <h4>Clinical Metabolic Formula Highlights:</h4>
+            <ul class="product-bullets">
+              <li><strong>800mg Granular Berberine HCl:</strong> Standardized 97% pure extract from natural bark and root for maximal AMPK cellular activation.</li>
+              <li><strong>Advanced Lipid Absorption Matrix:</strong> Formulated with micro-olive oil and L-Leucine to overcome Berberine's natural absorption barriers.</li>
+              <li><strong>Smooths Blood Sugar Spikes:</strong> Helps maintain balanced post-meal glucose without the brutal afternoon crashes.</li>
+              <li><strong>Ignites Stubborn Fat Burning:</strong> Decreases baseline fasting insulin so stored visceral belly fat can finally be mobilized.</li>
+              <li><strong>Encourages Natural Ovulation:</strong> Reduces ovarian androgen synthesis, paving the way for predictable monthly periods.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Supplement Facts Card -->
+        <div class="supp-facts-card">
+          <img src="images/supplement-facts.png" alt="Supplement Facts panel" onclick="switchProductImg('images/supplement-facts.png', null)" />
+          <div class="supp-facts-info">
+            <h5>Official Supplement Facts (Per 2 Capsules):</h5>
+            <p>Granular Berberine Hydrochloride Extract 97% (bark) 10mg + Granular Berberine Hydrochloride Extract 8% (bark/root) 790mg. 60 Vegetarian Capsules per bottle. Made in USA in a certified facility.</p>
+          </div>
+        </div>
+
+        <!-- Trust Badges Strip -->
+        <div class="trust-icons-strip">
+          <div class="trust-badge-item">🌿 100% Vegan</div>
+          <div class="trust-badge-item">🌾 Gluten-Free</div>
+          <div class="trust-badge-item">🚫 Non-GMO</div>
+          <div class="trust-badge-item">🧪 Allergen-Free</div>
+          <div class="trust-badge-item">🇺🇸 Made in USA</div>
+        </div>
+      </section>
+
+      <!-- Transformation Story Card -->
+      <section class="transformation-card">
+        <h2>My 90-Day Metabolic Turnaround</h2>
+        <div class="transformation-grid">
+          <div>
+            <p>
+              I began taking two capsules of Daily Knack PCO Defense every morning with breakfast.
+            </p>
+            <p>
+              <strong>Within the first 10 days:</strong> The voice in my head screaming for sugar at 3:00 PM went completely silent. My afternoon energy stayed steady. I stopped feeling ravenous two hours after eating.
+            </p>
+            <p>
+              <strong>By Week 5:</strong> My jeans were loose around my waist. Without cutting calories further, 11 pounds of stubborn visceral water and fat weight had melted away.
+            </p>
+            <p>
+              <strong>On Day 48:</strong> I woke up, walked into the bathroom, and saw it. 
+              <strong>A natural, bright red period. No synthetic birth control. No cramp misery. Just my body doing what it was designed to do.</strong>
+            </p>
+            <p style="font-weight: 700; color: #0f172a;">
+              By month three, my cycles were clocking in at 29 to 31 days consistently. My fasting insulin dropped by 62%. I felt like I had finally been handed my life back.
+            </p>
+          </div>
+          <img src="images/healthy-scale-transformation.jpg" alt="Woman experiencing healthy weight and metabolic wellness" />
+        </div>
+      </section>
+
+      <!-- Realistic Timeline Tracker -->
+      <div class="timeline-wrapper">
+        <div class="timeline-title">What To Realistically Expect On PCO Defense</div>
+        <div class="timeline-steps">
+          <div class="timeline-step">
+            <div class="step-marker">1-2</div>
+            <div class="step-content">
+              <h5>Weeks 1 to 2: Glucose Balance & Cravings Fade</h5>
+              <p>Blood glucose spikes even out. Sugar cravings vanish, afternoon brain fog lifts, and energy remains stable from morning to evening.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-marker">3-5</div>
+            <div class="step-content">
+              <h5>Weeks 3 to 5: Visceral Belly Fat Unlocks</h5>
+              <p>With baseline insulin lowered, your body can finally access and burn stored belly fat. Bloating decreases and waist circumference visibly reduces.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-marker">6-12</div>
+            <div class="step-content">
+              <h5>Weeks 6 to 12: Ovulation & Regular Cycle Returns</h5>
+              <p>Ovarian androgens normalize, allowing mature egg release. Natural, predictable menstrual cycles resume without hormonal side effects.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Customer Reviews -->
+      <section class="reviews-section">
+        <h3 class="reviews-title">Real Women. Real Metabolic Turnarounds.</h3>
+        <p class="reviews-rating-sub">★★★★★ 4.9 out of 5 based on verified PCOS customers</p>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"I didn't have a period for 7 months. My doctor just kept pushing Metformin which made me violently sick to my stomach. Switched to PCO Defense Berberine and within 5 weeks, my period returned! Plus I'm down 14 lbs and my clothes fit normally again."</p>
+            <div class="review-author">Amanda R., 28 <span class="verified-tick">✔ Verified Buyer</span></div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"The difference in my blood sugar is night and day. I used to get so shaky and hangry between meals that I couldn't think. Now I have steady energy all day, zero sugar crashes, and my stubborn PCOS belly bloat has completely flattened out."</p>
+            <div class="review-author">Danielle M., 32 <span class="verified-tick">✔ Verified Buyer</span></div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"My fasting insulin was 26 (dangerously high). After 2 months of Daily Knack Berberine, my labs came back at 9.4! My endocrinologist was stunned. My periods are now every 28–30 days on the dot."</p>
+            <div class="review-author">Taylor B., 31 <span class="verified-tick">✔ Verified Buyer</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Special Offer Box -->
+      <section class="offer-box" id="order-section">
+        <div class="ribbon-popular">Direct Special Offer</div>
+        <h3 class="offer-headline">Claim Your Daily Knack PCO Defense</h3>
+        <p class="offer-sub">Take back control of your metabolism, balance blood sugar, and restore your natural cycle</p>
+
+        <div class="packages-grid">
+          <!-- Package 1: 1 Bottle -->
+          <div class="pkg-card" onclick="selectPkg(this, 1)">
+            <div class="pkg-name">1 Bottle Starter</div>
+            <div class="pkg-pricing">
+              <span class="pkg-price">$49.90</span>
+              <span class="pkg-compare">$74.99</span>
+            </div>
+            <div class="pkg-desc">30-Day Supply (60 Capsules) · Supports initial glucose balance</div>
+          </div>
+
+          <!-- Package 2: 2 Bottles (Selected) -->
+          <div class="pkg-card selected" onclick="selectPkg(this, 2)">
+            <div class="pkg-badge">Best Value</div>
+            <div class="pkg-name">2 Bottles Complete Reset</div>
+            <div class="pkg-pricing">
+              <span class="pkg-price">$49.90 <span style="font-size: 14px; font-weight: normal; color: #64748b;">/ each</span></span>
+              <span class="pkg-compare">$149.98</span>
+            </div>
+            <div class="pkg-desc">60-Day Protocol · Complete metabolic reset for weight & cycles</div>
+          </div>
+        </div>
+
+        <button class="primary-cta-btn" onclick="handleCheckout()">
+          Get Daily Knack PCO Defense Now →
+        </button>
+
+        <div class="cta-sub-guarantee">
+          <span>🛡️</span> 100% Satisfaction Guarantee · Fast Direct US Shipping · Discrete Packaging
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <h3 class="faq-title">Frequently Asked Questions</h3>
+
+        <div class="faq-item active">
+          <div class="faq-question" onclick="toggleFaq(this)">How does Berberine help with PCOS weight loss when calorie counting fails?</div>
+          <div class="faq-answer">
+            In PCOS, high insulin acts as a biochemical lock on fat cells, preventing your body from burning stored visceral fat regardless of diet. Berberine activates the cellular enzyme AMPK, restoring insulin sensitivity and driving down fasting insulin levels. Once insulin is lowered, your body can finally mobilize and burn stored fat for energy.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">How does it help bring back missing or irregular periods?</div>
+          <div class="faq-answer">
+            Excess insulin directly stimulates the ovaries to overproduce male hormones (testosterone and androgens). This androgen surge freezes egg follicles, preventing ovulation. By lowering insulin and restoring metabolic sensitivity, Berberine allows ovaries to mature follicles naturally, triggering healthy ovulation and a regular menstrual cycle.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">How does Berberine compare to Metformin for PCOS?</div>
+          <div class="faq-answer">
+            Multiple clinical trials have shown Berberine to be as effective as Metformin in improving insulin resistance, lowering waist-to-hip ratio, and balancing lipids—without the severe gastrointestinal distress, nausea, and cramping that often causes women to abandon Metformin.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">What is the suggested daily use?</div>
+          <div class="faq-answer">
+            Adults take two (2) capsules daily with 6–8 oz of water, preferably 15–20 minutes before your main meal, or as directed by a healthcare professional. Each bottle contains 60 vegetarian capsules (a full 30-day supply).
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- Mobile Sticky Bar -->
+  <div class="mobile-sticky-bar">
+    <div class="mobile-bar-info">
+      <div class="price">$49.90 <span style="font-size: 12px; color: #16a34a; font-weight: 700;">Save $25.09</span></div>
+      <div class="note">PCO Defense · In Stock</div>
+    </div>
+    <button class="mobile-bar-btn" onclick="handleCheckout()">Order Now</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p style="margin-bottom: 8px;">
+        © <span id="year"></span> Her Health Review & Daily Knack. All rights reserved.
+      </p>
+      <p style="margin-bottom: 8px;">
+        <a href="index.html">PCOS Skin & Acanthosis Page</a>
+        <a href="#order-section">Privacy Policy</a>
+        <a href="#order-section">Terms & Conditions</a>
+        <a href="#order-section">Customer Support</a>
+      </p>
+      <p style="color: #94a3b8; font-size: 11px; max-width: 620px; margin: 12px auto 0;">
+        *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Product Link
+    const PRODUCT_URL = "https://dailyknack.com/products/berberine?_su_rec=dEJ0izGTTGsNMEsE8zDkz41OuSe9YsjdNJ5dK_pPlqYe_vBcfW5H2tR_pw-lj7gFxUAoxItaPAuhtzWB2Rn2vlx6gSxi3kO2yoto78V3JSiYyaAUa1lLjoAfLJ4xWjsgQwAhY5e7gSBY1XwCo_IPRdcY6S-d9gmMg0e8LvG07PCe7yRIHDTjyFwFlxv8HFtfRUrDbUJBrqgRfVhIpDiik5sjCrIaE-542jXE-BRSreVBJ02CCTfyW508sdenlTpqskOg2iTNiUoMaxEkLtD5_5FO24DOY9b9KufpGDRE6VZ9XIHW8UNQAhj7RzShhw6LouX_Pg&_su_rec_id=612d3771-db75-446e-99d8-fc4a2bc99a26-1791821857";
+
+    // Set Year
+    document.getElementById('year').innerText = new Date().getFullYear();
+
+    // Image switcher
+    function switchProductImg(src, btn) {
+      const img = document.getElementById('mainProductImg');
+      img.style.opacity = '0.3';
+      setTimeout(() => {
+        img.src = src;
+        img.style.opacity = '1';
+      }, 150);
+
+      if (btn) {
+        document.querySelectorAll('.thumb-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      }
+    }
+
+    // Interactive Quiz
+    function checkQuiz() {
+      const checked = document.querySelectorAll('.quiz-option input[type="checkbox"]:checked').length;
+      const res = document.getElementById('quizResult');
+      if (checked >= 2) {
+        res.classList.add('active');
+      } else {
+        res.classList.remove('active');
+      }
+    }
+
+    // Package Selector
+    function selectPkg(card, pkgNum) {
+      document.querySelectorAll('.pkg-card').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+    }
+
+    // Checkout handler
+    function handleCheckout() {
+      window.open(PRODUCT_URL, '_blank');
+    }
+
+    // FAQ Toggle
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      item.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

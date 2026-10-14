@@ -1,32 +1,41 @@
-# PCOS Hyperpigmentation Story-Mode Landing Page
+# PCOS Multi-Angle Story Landing Pages
 
-An interactive, high-converting story-mode landing page designed for Polycystic Ovary Syndrome (PCOS) hyperpigmentation (Acanthosis Nigricans) and metabolic hormone rebalancing, featuring **Daily Knack PCO Defense (Granular Berberine HCl 800mg)** and real clinical before-and-after photographic progressions.
+High-converting, story-mode landing pages designed for Polycystic Ovary Syndrome (PCOS) education and conversion, featuring **Daily Knack PCO Defense (Granular Berberine HCl 800mg)**.
 
-## 📖 Key Story Angles & Features
-- **Editorial Hook ("The Ponytail Rule"):** Explores the emotional burden of hiding the dark ring around the neck and underarms, avoiding tank tops, and scrubbing skin raw in vain.
-- **The Root Cause Revelation:** Explains the Insulin-Melanin Axis—why PCOS insulin resistance floods the body with insulin, stimulating melanocytes and stacking keratinocytes into velvety plaques (Acanthosis Nigricans).
-- **The Metabolic Solution (Berberine):** Highlights how Berberine acts as an AMPK activator, restoring insulin sensitivity from within and drying up the fuel driving hyperpigmentation.
-- **Interactive Before & After Gallery (From TryStrawberry):**
-  - **Case 1:** Posterior Neck Acanthosis Ring (`images/before-after-2.png`)
-  - **Case 2:** Underarm & Axillary Zone Discoloration (`images/before-after-1.png`)
-  - **Case 3:** Delicate Skin Folds & Inner Thighs (`images/before-after-3.png`)
-  - **Case 4:** Full Multi-Area Comprehensive Reset (`images/before-after-4.png`)
-  - *Interactive tab and 4-grid selector allowing users to toggle between detailed patient cases.*
-- **Official Product Integration:** Daily Knack PCO Defense (Granular Berberine HCl 800mg, 60 vegetarian capsules).
-- **Interactive Product Showcase Gallery:**
-  - Front view (`images/pco-defense-front.png`)
-  - Angled view (`images/pco-defense-angle.png`)
-  - Detail view (`images/pco-defense-detail.png`)
-  - Back label (`images/pco-defense-back.png`)
-  - Official Supplement Facts (`images/supplement-facts.png`)
-- **Direct Store Integration:** Direct tracking link to Daily Knack Berberine product checkout.
-- **Trust Badges & Reviews:** 100% Vegan, Gluten-Free, Non-GMO, Allergen-Free, Made in USA.
+## 📄 Pages Available
 
-## 🚀 Live Preview / Usage
-Open `index.html` in your browser:
+### 1. `index.html` — PCOS Hyperpigmentation & Acanthosis Nigricans
+* **Story Hook:** *"The Ponytail Rule"* — hiding the dark velvety neck collar and shadowed armpits for 6 years, thinking it was dirt.
+* **Mechanism:** Insulin resistance triggering melanocyte receptors in friction folds (Acanthosis Nigricans) and why harsh scrubbing creates Post-Inflammatory Hyperpigmentation (PIH).
+* **Clinical Proof:** Includes 4 authentic unretouched before-and-after comparison progressions across the neck, underarms, and thighs.
+* **Live URL:** [https://bombaj6.github.io/pcos-hyperpigmentation-story/](https://bombaj6.github.io/pcos-hyperpigmentation-story/)
+
+### 2. `pcos-metabolic.html` — Weight Gain, Irregular Periods & Blood Sugar Spikes
+* **Story Hook:** Eating 1,200 calories and doing hours of cardio while weight keeps climbing, periods vanish for 90+ days, and afternoon shaky sugar crashes hit daily.
+* **The 3 Metabolic Pillars:**
+  1. **Stubborn Weight & Visceral Belly Fat:** High insulin locks fat cells, blocking lipolysis and forcing every calorie into visceral belly storage.
+  2. **Missing & Irregular Cycles:** High insulin floods ovaries, stimulating androgen/testosterone surges that freeze egg follicles (anovulation).
+  3. **High Blood Sugar & Crashes:** Cellular starvation triggering uncontrollable carb/sugar cravings and energy crashes.
+* **The Solution (Berberine / AMPK):** Activates AMPK to force cells to absorb glucose without excess insulin, unlocking fat storage, lowering androgens, and triggering natural ovulation.
+* **Interactive Tool:** Interactive PCOS Insulin Resistance Self-Assessment Quiz.
+* **Live URL:** [https://bombaj6.github.io/pcos-hyperpigmentation-story/pcos-metabolic.html](https://bombaj6.github.io/pcos-hyperpigmentation-story/pcos-metabolic.html)
+
+---
+
+## 🛍️ Featured Product
+* **Product:** Daily Knack PCO Defense (Granular Berberine HCl 800mg)
+* **Bottle Count:** 60 Vegetarian Capsules (1-Month Supply)
+* **Manufacturing:** Made in the USA in a GMP Certified Facility
+* **Certifications:** 100% Vegan, Gluten-Free, Non-GMO, Allergen-Free
+* **Direct Store Tracking Link:** [Daily Knack Berberine Product Page](https://dailyknack.com/products/berberine?_su_rec=dEJ0izGTTGsNMEsE8zDkz41OuSe9YsjdNJ5dK_pPlqYe_vBcfW5H2tR_pw-lj7gFxUAoxItaPAuhtzWB2Rn2vlx6gSxi3kO2yoto78V3JSiYyaAUa1lLjoAfLJ4xWjsgQwAhY5e7gSBY1XwCo_IPRdcY6S-d9gmMg0e8LvG07PCe7yRIHDTjyFwFlxv8HFtfRUrDbUJBrqgRfVhIpDiik5sjCrIaE-542jXE-BRSreVBJ02CCTfyW508sdenlTpqskOg2iTNiUoMaxEkLtD5_5FO24DOY9b9KufpGDRE6VZ9XIHW8UNQAhj7RzShhw6LouX_Pg&_su_rec_id=612d3771-db75-446e-99d8-fc4a2bc99a26-1791821857)
+
+---
+
+## 🚀 Local Preview
 ```bash
+# Open Skin & Hyperpigmentation Landing Page
 open index.html
-```
 
-Live on GitHub Pages:
-https://bombaj6.github.io/pcos-hyperpigmentation-story/
+# Open Weight, Period & Blood Sugar Landing Page
+open pcos-metabolic.html
+```

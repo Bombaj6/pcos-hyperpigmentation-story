@@ -102,6 +102,21 @@
       color: var(--text-muted);
       font-weight: 500;
     }
+    .masthead-nav {
+      display: flex;
+      gap: 16px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .masthead-nav a {
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+    .masthead-nav a.active {
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 2px;
+    }
 
     /* Container */
     .container {
@@ -1158,7 +1173,10 @@
         HER HEALTH INVESTIGATION
         <span>Endocrine & Dermatology</span>
       </div>
-      <div class="masthead-date" id="currentDate">Updated Today</div>
+      <div class="masthead-nav">
+        <a href="index.html" class="active">Skin & Acanthosis</a>
+        <a href="pcos-metabolic.html">Weight, Period & Glucose</a>
+      </div>
     </div>
   </header>
 
@@ -1619,6 +1637,7 @@
         © <span id="year"></span> Her Health Review & Daily Knack. All rights reserved.
       </p>
       <p style="margin-bottom: 8px;">
+        <a href="pcos-metabolic.html" style="font-weight: 700; color: var(--primary);">PCOS Weight, Period & Glucose Page</a>
         <a href="#order-section">Privacy Policy</a>
         <a href="#order-section">Terms & Conditions</a>
         <a href="#order-section">Clinical Studies</a>
